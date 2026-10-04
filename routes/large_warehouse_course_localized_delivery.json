@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "world": "large_warehouse_course.sdf",
+  "frame": "map",
+  "points": [
+    {
+      "x": 1.2,
+      "y": 0.0,
+      "wait": 3.0
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "wait": 3.0
+    }
+  ]
+}

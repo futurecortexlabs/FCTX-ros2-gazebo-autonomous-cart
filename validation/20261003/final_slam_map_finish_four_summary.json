@@ -1,0 +1,696 @@
+{
+  "mode": "final_common_configuration_full_SLAM_regression",
+  "ros_domain_id": 79,
+  "gz_partition": "isolated_test_partition",
+  "mapping_speed_mps": 0.3,
+  "minimum_travel_distance_m": 0.02,
+  "minimum_travel_heading_rad": 0.02,
+  "bridge_correction_watchdog_wall_s": 1.5,
+  "all_four_passed": true,
+  "selected_courses": [
+    "loop_course.sdf",
+    "large_warehouse_course.sdf",
+    "slalom_course.sdf",
+    "obstacle_course.sdf"
+  ],
+  "results": [
+    {
+      "course": "loop_course.sdf",
+      "passed": true,
+      "stations_visited": 17,
+      "expected_stations": 17,
+      "areas": {
+        "spawn_connected": {
+          "samples": 2790,
+          "area_m2": 27.9,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.883871
+        },
+        "all_enclosed_safe": {
+          "samples": 4073,
+          "area_m2": 40.73,
+          "observed_free_fraction": 0.684999,
+          "usable_fraction": 0.605451
+        }
+      },
+      "endpoint_external_evaluation": {
+        "estimated_pose": [
+          -0.15305251840151374,
+          0.03898916821733055,
+          -0.21854366562586308
+        ],
+        "truth_map_xy": [
+          -0.16364238308136975,
+          0.041171115456344325
+        ],
+        "position_error_m": 0.010812313706672669,
+        "yaw_error_rad": 0.0017475724095711853
+      },
+      "max_station_position_error_m": 0.03017905492892471,
+      "max_station_yaw_error_rad": 0.0017475724095711853,
+      "contacts": 0,
+      "native_shutdown": {
+        "completed": true,
+        "elapsed_s": 2.8833184290051577,
+        "launch_exit_code": 0,
+        "shutdown_events": [
+          [
+            "pause_requested",
+            49124.248465554
+          ],
+          [
+            "pause_acknowledged",
+            49124.574783079
+          ],
+          [
+            "stats_requested",
+            49124.575168123
+          ],
+          [
+            "pause_applied",
+            49124.786533509
+          ],
+          [
+            "slam_deactivate_requested",
+            49124.786896293
+          ],
+          [
+            "slam_deactivate_acknowledged",
+            49125.716698774
+          ],
+          [
+            "SIGINT",
+            49125.716720997
+          ]
+        ],
+        "forced": false,
+        "native_or_shutdown_errors": [],
+        "terminal_cleanup_errors": [],
+        "remaining_owned_process_count": 0,
+        "passed": true
+      },
+      "validator_observer_actual_os_exit": {
+        "validator": {
+          "exit_code": null,
+          "reason": "Start caller ended without retaining Popen.wait; later process disappearance is observed, but its OS code is not inferred. Native launch exit0/all validation final actions/lock/PGID0 are independently proven."
+        },
+        "observer": {
+          "exit_code": null,
+          "reason": "Start caller ended without retaining Popen.wait; observer later disappeared. Unknown is not called exit0."
+        }
+      },
+      "runtime": {
+        "observer_sha256": "82213b8e841f193281f9e5c8357b80c19f84a519e229d09223a57e4a5ac26d15",
+        "total_samples": 183,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 114,
+        "moving_samples": 100,
+        "native_stats_delta_rtf": {
+          "count": 113,
+          "median": 0.9999994513892114,
+          "minimum": 0.8942702061179486,
+          "maximum": 1.0005035437830592
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 0.11257253100484377,
+          "scan": 0.052274922003562097,
+          "imu": 0.010910411001532339,
+          "wheel_odom": 0.02126444700115826,
+          "localized_odom": 0.04963468499772716
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 14,
+          "mode_switch_stop": 1,
+          "slowing": 11,
+          "driving": 88
+        },
+        "system_cpu_percent": {
+          "count": 114,
+          "median": 33.6,
+          "minimum": 17.3,
+          "maximum": 47.3
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 114,
+          "median": 35.0,
+          "minimum": 10.0,
+          "maximum": 103.1
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 114,
+          "median": 291.0,
+          "minimum": 242.0,
+          "maximum": 454.5
+        },
+        "slam_memory_rss_mb": {
+          "count": 114,
+          "median": 134.650390625,
+          "minimum": 111.87890625,
+          "maximum": 160.52734375
+        }
+      },
+      "source_fingerprints": {
+        "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5"
+      },
+      "slam_parameters_sha256": "5997d3d709ddf5e22014d07258f793c7554f5214f855e2000413a1195976fe12",
+      "artifact_sha256": {
+        "maps/loop_course/map_metadata.json": "f1613cdb0af2aabe6289b7bd68da85ffbebe0597f59cb0045b12ddd1df058bcc",
+        "maps/loop_course/map.yaml": "d85683b40f9f68d187aabe83208517ac22edcff9a1adb1d98127feb1389e4335",
+        "maps/loop_course/map.pgm": "5d3b833976913b646219d681d9659a5d3238e40b4cb6aaa83999df1b5352dbfd",
+        "routes/loop_course_coverage_delivery.json": "547c7bbad49e069a919431963f44f546d011553073e779c8ca50a91477a10f09"
+      },
+      "generated_map_dir": "maps/loop_course",
+      "generated_route_path": "routes/loop_course_coverage_delivery.json"
+    },
+    {
+      "course": "large_warehouse_course.sdf",
+      "passed": true,
+      "stations_visited": 9,
+      "expected_stations": 9,
+      "areas": {
+        "spawn_connected": {
+          "samples": 30418,
+          "area_m2": 304.18,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.95427
+        },
+        "all_enclosed_safe": {
+          "samples": 30418,
+          "area_m2": 304.18,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.95427
+        }
+      },
+      "endpoint_external_evaluation": {
+        "estimated_pose": [
+          0.022597081147150734,
+          0.15887072125536236,
+          -1.6983777706398893
+        ],
+        "truth_map_xy": [
+          0.04140652870981931,
+          0.15384885175926044
+        ],
+        "position_error_m": 0.01946829450282325,
+        "yaw_error_rad": 0.00028662271292101416
+      },
+      "max_station_position_error_m": 0.12665553602583124,
+      "max_station_yaw_error_rad": 0.00028662271292101416,
+      "contacts": 0,
+      "native_shutdown": {
+        "completed": true,
+        "elapsed_s": 3.6025353519944474,
+        "launch_exit_code": 0,
+        "shutdown_events": [
+          [
+            "pause_requested",
+            49658.53617087
+          ],
+          [
+            "pause_acknowledged",
+            49658.839619186
+          ],
+          [
+            "stats_requested",
+            49658.840006756
+          ],
+          [
+            "pause_applied",
+            49659.031559923
+          ],
+          [
+            "slam_deactivate_requested",
+            49659.03189628
+          ],
+          [
+            "slam_deactivate_acknowledged",
+            49660.718838534
+          ],
+          [
+            "SIGINT",
+            49660.718861716
+          ]
+        ],
+        "forced": false,
+        "native_or_shutdown_errors": [],
+        "terminal_cleanup_errors": [],
+        "remaining_owned_process_count": 0,
+        "passed": true
+      },
+      "validator_observer_actual_os_exit": {
+        "validator": {
+          "exit_code": null,
+          "reason": "Start caller ended without retaining Popen.wait; later process disappearance is observed, but its OS code is not inferred. Native launch exit0/all validation final actions/lock/PGID0 are independently proven."
+        },
+        "observer": {
+          "exit_code": null,
+          "reason": "Start caller ended without retaining Popen.wait; observer later disappeared. Unknown is not called exit0."
+        }
+      },
+      "runtime": {
+        "observer_sha256": "8f49c4e470a788d30b49bb5c1d497e14f1a383a809680d6839cd53f457efdb15",
+        "total_samples": 462,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 414,
+        "moving_samples": 405,
+        "native_stats_delta_rtf": {
+          "count": 410,
+          "median": 0.9999995415403766,
+          "minimum": 0.5873009180983031,
+          "maximum": 1.0018224623864158
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.684296567000274,
+          "scan": 0.1153449570047087,
+          "imu": 0.09010294900508597,
+          "wheel_odom": 0.08991992400115123,
+          "localized_odom": 0.11942593599815154
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 9,
+          "driving": 405
+        },
+        "system_cpu_percent": {
+          "count": 414,
+          "median": 24.0,
+          "minimum": 6.8,
+          "maximum": 57.7
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 414,
+          "median": 78.0,
+          "minimum": 30.0,
+          "maximum": 137.0
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 414,
+          "median": 300.0,
+          "minimum": 231.0,
+          "maximum": 492.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 414,
+          "median": 193.314453125,
+          "minimum": 114.34765625,
+          "maximum": 261.9609375
+        }
+      },
+      "source_fingerprints": {
+        "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5"
+      },
+      "slam_parameters_sha256": "5997d3d709ddf5e22014d07258f793c7554f5214f855e2000413a1195976fe12",
+      "artifact_sha256": {
+        "maps/large_warehouse_course/map_metadata.json": "153c35a3b2dad51c30ec983f8415ee5c0c4f0a07d8ce2fee79044057d6e3214e",
+        "maps/large_warehouse_course/map.yaml": "2007e0fc3f849c34229c7361d0cc354092eded144f4c3bdaffbbc548be8f9571",
+        "maps/large_warehouse_course/map.pgm": "4de1f92cbd6eb3862be888cfa2ea9195b768d746e6e207bc28caedc19b2ad3e6",
+        "routes/large_warehouse_course_coverage_delivery.json": "1a7bb47ae9ecf60854efb7c7bd4d98b44664f436f12819df7f5ee592c592c478"
+      },
+      "generated_map_dir": "maps/large_warehouse_course",
+      "generated_route_path": "routes/large_warehouse_course_coverage_delivery.json",
+      "max_pose_age_interpretation": "Largest moving sample immediately follows stationary arrival and the first angular motion; existing moving_since grace applies. Next sample receives a new pose while bridge and localized data stay fresh; stale status never appears. This is not a continuous-motion stale hold. See raw neighborhood."
+    },
+    {
+      "course": "slalom_course.sdf",
+      "passed": true,
+      "stations_visited": 15,
+      "expected_stations": 15,
+      "areas": {
+        "spawn_connected": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.973452
+        },
+        "all_enclosed_safe": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.973452
+        }
+      },
+      "endpoint_external_evaluation": {
+        "estimated_pose": [
+          0.1515660287136052,
+          -0.01731781072072984,
+          3.0278271161896653
+        ],
+        "truth_map_xy": [
+          0.15468916623395604,
+          -0.018917004021051287
+        ],
+        "position_error_m": 0.0035087614884480563,
+        "yaw_error_rad": 1.9355132734123053e-05
+      },
+      "max_station_position_error_m": 0.020359368664147143,
+      "max_station_yaw_error_rad": 1.935513275580438e-05,
+      "contacts": 0,
+      "native_shutdown": {
+        "completed": true,
+        "elapsed_s": 3.2030282050036476,
+        "launch_exit_code": 0,
+        "shutdown_events": [
+          [
+            "pause_requested",
+            50235.333040654
+          ],
+          [
+            "pause_acknowledged",
+            50235.643098077
+          ],
+          [
+            "stats_requested",
+            50235.643448247
+          ],
+          [
+            "pause_applied",
+            50235.833946722
+          ],
+          [
+            "slam_deactivate_requested",
+            50235.834278572
+          ],
+          [
+            "slam_deactivate_acknowledged",
+            50237.119540874
+          ],
+          [
+            "SIGINT",
+            50237.119562816
+          ]
+        ],
+        "forced": false,
+        "native_or_shutdown_errors": [],
+        "terminal_cleanup_errors": [],
+        "remaining_owned_process_count": 0,
+        "passed": true
+      },
+      "validator_observer_actual_os_exit": {
+        "validator": {
+          "exit_code": 0,
+          "raw_wait_status": 0,
+          "status": "actual_linux_zombie_exit_status_observed"
+        },
+        "observer": {
+          "exit_code": 0,
+          "raw_wait_status": 0,
+          "status": "actual_linux_zombie_exit_status_observed"
+        }
+      },
+      "runtime": {
+        "observer_sha256": "b218832f206fb19eef96e16a3696cf31a18a8da389865dc824123738dfe6c739",
+        "total_samples": 519,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 464,
+        "moving_samples": 449,
+        "native_stats_delta_rtf": {
+          "count": 463,
+          "median": 0.9999996188120055,
+          "minimum": 0.9074952853982243,
+          "maximum": 1.000291718011075
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.631949540002097,
+          "scan": 0.05668252499890514,
+          "imu": 0.011641436998615973,
+          "wheel_odom": 0.02116784700046992,
+          "localized_odom": 0.05004284100141376
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 11,
+          "driving": 449,
+          "mode_switch_stop": 4
+        },
+        "system_cpu_percent": {
+          "count": 464,
+          "median": 14.7,
+          "minimum": 5.3,
+          "maximum": 52.1
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 464,
+          "median": 77.95,
+          "minimum": 17.0,
+          "maximum": 146.0
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 464,
+          "median": 310.0,
+          "minimum": 223.0,
+          "maximum": 480.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 464,
+          "median": 200.3203125,
+          "minimum": 111.87109375,
+          "maximum": 267.765625
+        }
+      },
+      "source_fingerprints": {
+        "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5"
+      },
+      "slam_parameters_sha256": "5997d3d709ddf5e22014d07258f793c7554f5214f855e2000413a1195976fe12",
+      "artifact_sha256": {
+        "maps/slalom_course/map_metadata.json": "d1b0fd1263a203902277607b6f6c0e7afcc54874906d3ef054d8195262619b7d",
+        "maps/slalom_course/map.yaml": "7161be8510d55366d1f7d9c984f261284f09c978558cb4b815cef83111a89105",
+        "maps/slalom_course/map.pgm": "9cec17c3b1bf62c16ca5be0a467f1d2a6595f549ab9e0e09f09bdc9c1394ea41",
+        "routes/slalom_course_coverage_delivery.json": "6022dce2363330f31688ba021ab57459faae0901c31ced12499b91559d85f7f4"
+      },
+      "generated_map_dir": "maps/slalom_course",
+      "generated_route_path": "routes/slalom_course_coverage_delivery.json",
+      "max_pose_age_interpretation": "Largest moving sample immediately follows stationary arrival and the first angular motion; existing moving_since grace applies. Next sample receives a new pose while bridge and localized data stay fresh; stale status never appears. This is not a continuous-motion stale hold. See raw neighborhood."
+    },
+    {
+      "course": "obstacle_course.sdf",
+      "passed": true,
+      "stations_visited": 17,
+      "expected_stations": 17,
+      "areas": {
+        "spawn_connected": {
+          "samples": 2445,
+          "area_m2": 24.45,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.862986
+        },
+        "all_enclosed_safe": {
+          "samples": 3728,
+          "area_m2": 37.28,
+          "observed_free_fraction": 0.655848,
+          "usable_fraction": 0.565987
+        }
+      },
+      "endpoint_external_evaluation": {
+        "estimated_pose": [
+          -0.15301031823755556,
+          0.03323817305069723,
+          -0.21390492759235577
+        ],
+        "truth_map_xy": [
+          -0.16255346155566094,
+          0.033618214664869576
+        ],
+        "position_error_m": 0.009550707618726588,
+        "yaw_error_rad": 0.0020802711696329694
+      },
+      "max_station_position_error_m": 0.024649214332987886,
+      "max_station_yaw_error_rad": 0.0020802711696329694,
+      "contacts": 0,
+      "native_shutdown": {
+        "completed": true,
+        "elapsed_s": 4.9927852760010865,
+        "launch_exit_code": 0,
+        "shutdown_events": [
+          [
+            "pause_requested",
+            50449.946125864
+          ],
+          [
+            "pause_acknowledged",
+            50450.247882534
+          ],
+          [
+            "stats_requested",
+            50450.248258063
+          ],
+          [
+            "pause_applied",
+            50450.334113758
+          ],
+          [
+            "slam_deactivate_requested",
+            50450.334482308
+          ],
+          [
+            "slam_deactivate_acknowledged",
+            50453.502227057
+          ],
+          [
+            "SIGINT",
+            50453.502250154
+          ]
+        ],
+        "forced": false,
+        "native_or_shutdown_errors": [],
+        "terminal_cleanup_errors": [],
+        "remaining_owned_process_count": 0,
+        "passed": true
+      },
+      "validator_observer_actual_os_exit": {
+        "validator": {
+          "exit_code": 0,
+          "status": "actual_parent_Popen_wait"
+        },
+        "observer": {
+          "exit_code": 0,
+          "status": "actual_parent_Popen_wait"
+        },
+        "observer_forced": false,
+        "completed_time": 1790963041.8932657
+      },
+      "runtime": {
+        "observer_sha256": "badce2d985ccc1aee7c13997e141db78daf30058de5f25cf5b609ac75a58d334",
+        "total_samples": 207,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 137,
+        "moving_samples": 122,
+        "native_stats_delta_rtf": {
+          "count": 135,
+          "median": 0.9999993346539233,
+          "minimum": 0.8743870669467781,
+          "maximum": 1.0080007363794918
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.629121400997974,
+          "scan": 0.05357832199661061,
+          "imu": 0.02170502299850341,
+          "wheel_odom": 0.03198539900040487,
+          "localized_odom": 0.06185099399590399
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "slowing": 55,
+          "mode_switch_stop": 3,
+          "stopped": 8,
+          "driving": 70,
+          "waiting_for_fresh_data": 1
+        },
+        "system_cpu_percent": {
+          "count": 137,
+          "median": 18.2,
+          "minimum": 4.9,
+          "maximum": 55.9
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 137,
+          "median": 33.0,
+          "minimum": 8.0,
+          "maximum": 119.7
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 137,
+          "median": 254.0,
+          "minimum": 206.0,
+          "maximum": 486.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 137,
+          "median": 136.3203125,
+          "minimum": 111.87109375,
+          "maximum": 161.140625
+        }
+      },
+      "source_fingerprints": {
+        "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5"
+      },
+      "slam_parameters_sha256": "5997d3d709ddf5e22014d07258f793c7554f5214f855e2000413a1195976fe12",
+      "artifact_sha256": {
+        "maps/obstacle_course/map_metadata.json": "9c80839d226dc2835962c9a09ad55d85c90d65c6d513bb52e29a120d54850a43",
+        "maps/obstacle_course/map.yaml": "9492c260ee485a595be9da3b89909a16ec14dc7836879217c16b5fa349645465",
+        "maps/obstacle_course/map.pgm": "61f7e1ebb030cd603e9220f90cfe8f466e143bbeb8f2175a98e3216a289c366a",
+        "routes/obstacle_course_coverage_delivery.json": "d5d42251a43d795021224cd5d9e6cbcb44319f62f2f055cb3250f884ec7d9abd"
+      },
+      "generated_map_dir": "maps/obstacle_course",
+      "generated_route_path": "routes/obstacle_course_coverage_delivery.json",
+      "max_pose_age_interpretation": "Largest moving sample follows a stationary arrival and then first angular motion. Existing moving_since grace applies, next sample has a new pose, bridge/localized data stay fresh and no stale notification occurs. See neighborhood.",
+      "temporary_waiting_fresh_data_interpretation": "One roughly 1s sample reports safety waiting_for_fresh_data. At the read-only observer scan age .00343s, localized .01107s, pose .13167s and RTF≈1; next sample is slowing with resumed command. No persistent hold occurred and all stations completed. Raw command timing and per-node callback timing were not observed, so the exact freshness trigger is not established."
+    }
+  ],
+  "ground_truth_used_for_control": false,
+  "ground_truth_subscriber_scope": "Independent quality observer and GUI speed-only display. Control4 subscribe to estimates/sensors, not Gazebo ground truth.",
+  "source_manifest_count": 86,
+  "canonical_runtime_source_differences": [
+    {
+      "path": "scripts/validate_saved_routes.py",
+      "executed_copy_sha256": "4c43f73cc5c39c23b788f7abd94f544b0b6a3da380bcbb9d6d2efd5c562cb138",
+      "canonical_sha256": "605e37b49e402ce448bb10dfe1395139abd0f8e761ea603d5b6c6f247ae855a1"
+    },
+    {
+      "path": "scripts/validate_endurance.py",
+      "executed_copy_sha256": "aeec48ce310b96cbf419ab0fc37bca8836c119c467988bea393967a118a55df7",
+      "canonical_sha256": "54b9288e11bced4e601d38e054d4420715ac78fab7649c25b4342f80c1e8b2c5"
+    },
+    {
+      "path": "scripts/test_validation_processes.py",
+      "executed_copy_sha256": "46cd7b355fd9e3fc7d81397a6e21bcc80d8ee6017f3cfadf268c79e19e821ddf",
+      "canonical_sha256": "353230a5c0c93351585e79de1653b6e46eacbee73c5f608932521ef7a63787e7"
+    },
+    {
+      "path": "scripts/validate_map_coverage.py",
+      "executed_copy_sha256": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5",
+      "canonical_sha256": "d20d3b07c062206ab3f0a70706b794df51c57c61c3b2285564f9aa2bb074b6d8"
+    }
+  ],
+  "source_variant_explanation": "Controller, GUI, bridge, EKF, SLAM config/worlds and imported runtime helpers stayed fixed. Copy used map validator70e3; canonical d20 strengthens same-PGID tracking. Two other standalone validators and their negative unit changed later but were unused here. All32 native children have clean-finish logs, every launch exit0/forcedfalse, and independent post-stop PGID/env0 evidence.",
+  "native_clean_finish_process_counts_by_label": {
+    "async_slam_toolbox_node-8": 4,
+    "ekf_node-6": 4,
+    "gz-1": 4,
+    "parameter_bridge-2": 4,
+    "python3-4": 4,
+    "python3-5": 4,
+    "python3-7": 4,
+    "static_transform_publisher-3": 4
+  },
+  "final_inventory": {
+    "observed_time": 1790963294.5860372,
+    "active_copy_env_processes": [],
+    "active_copy_path_processes": [],
+    "remaining_member_count_per_launch": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lock_reacquired": true
+  },
+  "generated_artifacts_scope": "Observed SLAM variants/routes remain in this copy; canonical/Windows delivery maps/routes were not replaced.",
+  "full_course_completion": "All sequences include return to origin using unchanged normal navigation safety and arrival thresholds.",
+  "coverage_scope": "100% observed free of spawn-connected safe samples for all four. Circle/Obstacle inaccessible inner components are reported separately; 100% world-whole coverage is not claimed.",
+  "limitations": [
+    "Circle and LargeWarehouse validator/observer actual OS exitcodes are null with explicit reason; normal launch/native termination and final validation actions are independently proven. Slalom actual zombie wait status and Obstacle actual parent Popen.wait statuses are 0.",
+    "Runtime observer samples roughly once a second and is read-only, without GT subscription. It does not prove every subsecond event.",
+    "GT position errors reported here are station/endpoint errors, not the maximum instantaneous driving error."
+  ]
+}

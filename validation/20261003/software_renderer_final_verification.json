@@ -1,0 +1,135 @@
+{
+  "verified_at_jst": "2026-10-03T00:15:09.726138+09:00",
+  "scope": "Same WSL host alternate Mesa llvmpipe rendering, warehouse AMCL two-point out-and-back and clean stop",
+  "all_passed": true,
+  "exit": {
+    "exit_code": 0,
+    "elapsed_seconds": 27.62713418900239,
+    "scenario_environment": {
+      "ROS_DOMAIN_ID": "76",
+      "GZ_PARTITION": "isolated_test_partition",
+      "GALLIUM_DRIVER": "llvmpipe",
+      "LIBGL_ALWAYS_SOFTWARE": "1"
+    },
+    "native_environment_captured": true,
+    "actual_ogre_renderer_captured": true
+  },
+  "active_owned_processes": [],
+  "source_comparison": {
+    "worlds/warehouse_course.sdf": {
+      "runtime_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+      "windows_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+      "equal": true
+    },
+    "routes/warehouse_course_localized_delivery.json": {
+      "runtime_sha256": "387246832087eddc47a109a5799df3260b77f520ba590c0e1c001d8022876464",
+      "windows_sha256": "387246832087eddc47a109a5799df3260b77f520ba590c0e1c001d8022876464",
+      "equal": true
+    },
+    "config/amcl.yaml": {
+      "runtime_sha256": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+      "windows_sha256": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+      "equal": true
+    },
+    "config/ekf.yaml": {
+      "runtime_sha256": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+      "windows_sha256": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+      "equal": true
+    },
+    "launch/loop_course.launch.py": {
+      "runtime_sha256": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+      "windows_sha256": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+      "equal": true
+    },
+    "scripts/course_selector.py": {
+      "runtime_sha256": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+      "windows_sha256": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+      "equal": true
+    },
+    "scripts/loop_controller.py": {
+      "runtime_sha256": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+      "windows_sha256": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+      "equal": true
+    },
+    "scripts/localization_bridge.py": {
+      "runtime_sha256": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+      "windows_sha256": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+      "equal": true
+    },
+    "scripts/goal_navigation.py": {
+      "runtime_sha256": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+      "windows_sha256": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+      "equal": true
+    },
+    "scripts/occupancy_navigation.py": {
+      "runtime_sha256": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+      "windows_sha256": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+      "equal": true
+    },
+    "scripts/mission_control.py": {
+      "runtime_sha256": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+      "windows_sha256": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+      "equal": true
+    },
+    "scripts/validate_saved_routes.py": {
+      "runtime_sha256": "eaec1a5076d8a2720eb7404e04e2fe37a99ab26d3b6d64e1f147472ba80c2982",
+      "windows_sha256": "eaec1a5076d8a2720eb7404e04e2fe37a99ab26d3b6d64e1f147472ba80c2982",
+      "equal": true
+    },
+    "maps/warehouse_course/map.pgm": {
+      "runtime_sha256": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+      "windows_sha256": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+      "equal": true
+    },
+    "maps/warehouse_course/map.yaml": {
+      "runtime_sha256": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+      "windows_sha256": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+      "equal": true
+    },
+    "maps/warehouse_course/map_metadata.json": {
+      "runtime_sha256": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc",
+      "windows_sha256": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc",
+      "equal": true
+    },
+    "scripts/dynamic_obstacles.py": {
+      "runtime_sha256": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+      "windows_sha256": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+      "equal": true
+    }
+  },
+  "endpoint_error_m": 0.024814690369387958,
+  "collision_count": 0,
+  "actual_speed_mps": 0.0,
+  "actual_turn_rate_rps": 0.0,
+  "shutdown_seconds": 1.0424462239971035,
+  "launch_exit_code": 0,
+  "shutdown_events": [
+    [
+      "pause_requested",
+      42279.169657155
+    ],
+    [
+      "pause_acknowledged",
+      42279.513291887
+    ],
+    [
+      "stats_requested",
+      42279.513665188
+    ],
+    [
+      "pause_applied",
+      42279.704063107
+    ],
+    [
+      "SIGINT",
+      42279.704089637
+    ]
+  ],
+  "actual_renderer": {
+    "source": "Gazebo Ogre2 renderer log",
+    "line": "00:12:09: GL_RENDERER = llvmpipe (LLVM 20.1.2, 256 bits)",
+    "captured_seconds": 3.2136800459993538
+  },
+  "report_max_update_age_seconds": 3.038409890003095,
+  "navigation_max_age_seconds": 0.24615664599696174
+}

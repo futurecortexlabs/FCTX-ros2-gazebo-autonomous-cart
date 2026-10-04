@@ -1,0 +1,213 @@
+{
+  "started_at_jst": "2026-10-03T00:37:08+09:00",
+  "scope": "AMCL restart with saved observed maps, saved map-frame full inspection routes, final error and stop",
+  "ros_domain_id": "77",
+  "gz_partition": "isolated_test_partition",
+  "endpoint_error_limit_m": 0.35,
+  "results": [
+    {
+      "course": "large_warehouse_course.sdf",
+      "route": "routes/large_warehouse_course_coverage_delivery.json",
+      "route_frame": "map",
+      "point_count": 8,
+      "source_files_sha256": {
+        "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "config/slam.yaml": "9e6b9e537695a164cb168ff0910cfde71ce81cccf75b52498a7f60febf567d6b",
+        "fonts/fonts.conf": "aa64b9225aaada1794e1592640ccca8c397cf06307cb60cdd8f7106a1fa38623",
+        "launch/lidar_lab.launch.py": "f7017178729f65966e481fdf8e2d1e9da73ffc7c4757ae2e2ae80d0052ac54c9",
+        "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+        "manual_control.sh": "adde9e11af5b1f9a3923a277efefb8a1691acde05685098dd8c9ace6eb911a22",
+        "maps/large_warehouse_course/map.pgm": "57a293b5b2c2b8fbd8efdc47859693c5e7e831857d36294d1a4032795f04baeb",
+        "maps/large_warehouse_course/map.yaml": "9beb594e860a30e1f0e08508c40a431780b6552c954af3162042f486319781b8",
+        "maps/large_warehouse_course/map_metadata.json": "2dafedb21daa6b6bd4df738c418e9b19ad918570361895a801747151f3efce38",
+        "routes/large_warehouse_course_coverage_delivery.json": "ecd540ada35051cd3da379f12d711b7d32f061b4ef20d9355c5e2b3e0457665c",
+        "run_courses.sh": "67259761ac72c1349965bc5f46ab5f34a1c32d9ad0991b9a89db8c2e75ed3394",
+        "run_loop.sh": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734",
+        "run_manual.sh": "a1a8b4277b5956c118a056dcda9d842c29f551c402815616b4f3be38f2f46ad1",
+        "run_obstacles.sh": "aadda71e8fc4b68290cdb1703f7e748029c8b56940bf3e9c00d0defc01ca55f9",
+        "scripts/benchmark_optimization.py": "bd723dfc96e135db5a788e45032e3e81875e528cf5d944d9566a8736a023e35e",
+        "scripts/build_extra_courses.py": "53a7a4c9193f7ebe05ee8d5f9e9c535d7c41f3f582b381ec611e0fa684c64995",
+        "scripts/build_large_courses.py": "b68c357f8eb95b49890d96975a73b86ad0b30110ddf1d53e8d410ded2feb4494",
+        "scripts/build_loop_world.py": "6599f4f4c5780951e998fe6ca839637998b4be538c900a300efcd7bbfd7fc1ee",
+        "scripts/build_obstacle_course.py": "570a54d0cd4d407529034c6eab33ff1d3209f99cec608abcfaf0b501518fa330",
+        "scripts/capture_overview.py": "19b042a04eb6fbb18810725b7a6804edd7ad4a9878f144b59643fac579364b59",
+        "scripts/check_environment.py": "374f0051aa4fba61fa4fb46d4bcf0615aec21e612cad10a0b148bf36a03dd81b",
+        "scripts/course_selector.py": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/generate_acceptance_report.py": "b228ce50944db3471981b9b9074accab78cb2f53937630c2be66ec5d4f896604",
+        "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+        "scripts/goal_panel.py": "3e5c03c8636fd94824957657db822a918fec034602c0f39a89031ca21711e703",
+        "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/loop_core.py": "db033783fcb46fb7d1ae28157528e70e80b2365f0b6a6ed866d16f38a13f1235",
+        "scripts/manual_panel.py": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610",
+        "scripts/map_cache.py": "83762936949d65d47537b4ad531bbc2faf5c36ec52e9f2394634509f04c86ecb",
+        "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+        "scripts/mission_panel.py": "80e9994ab70687308ccb61ca5902217be7a151e79f64487ed7bb306d6f719223",
+        "scripts/observe_localization_accuracy.py": "55fb10746ef520606478e84707a19742c9118bb0157680a7943e60b8bc389b47",
+        "scripts/obstacle_avoidance.py": "9fe91cb44676bd7c1e88fa14641a2d3f70b1b62f090b6b9e5e0e73cbf32b453a",
+        "scripts/obstacle_control.py": "d32102150f590ed0e7db0649e0f9fd1e9362d5c72608eacd954a56f72d4856f7",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/resume_large_validation.py": "63dea0287b7aa31a24ff1f1d07b00095746ab4ef5a71deaa9b8a39f7eca3f50d",
+        "scripts/run_acceptance.py": "5a713ac8c4643177d7c051f4becdd4499234e532a5f841a6f7deba81a36685c7",
+        "scripts/run_audit.py": "c15159aced6c796d85df4c661fab5f40151ebe282a2d7c73db3cf0a2de68bf5f",
+        "scripts/save_slam_map.py": "baa4dfebfac2565181cedd2d1f826865ea981219bc4ba2e858fc69944e7e7098",
+        "scripts/speed_control.py": "ddbd9c64732ff763e43efbaae585442b7f54c96c1b584eb73ac0f873c479ad36",
+        "scripts/speed_settings.py": "70c8e7833402cfd893bf465a4dd35742aef75714ab7e3562bd9eb889f9502d72",
+        "scripts/test_course_switch.py": "82c621ddacdaa00fa3ffd106493df2bf8dd8b634373896e9f9ba9b4e9bf98627",
+        "scripts/test_dynamic_obstacles.py": "9b3a6f9df9a3c13d4c56ac6a5331f0aab5a8f3c25adcd94ad36fdde9efa7ffb6",
+        "scripts/test_goal_controller.py": "4aadd68bde5cde83bfab8deb06681f8ab4e1670f687b86849f218749844d4694",
+        "scripts/test_goal_course_switch.py": "be807c7e66e9c8b36a8f9a27be5705cdb4a1e0d49026c40004c9a112055c696c",
+        "scripts/test_goal_navigation.py": "7c645094db200fcb937705ffa252bd96e664c2344b5efdc91435a29f631b619d",
+        "scripts/test_goal_panel.py": "a67f91535a66818f8c63e147ae7746955c209c9fe067fd78bf041e5d4cbedd5f",
+        "scripts/test_localization_bridge.py": "9aef05eff3d77a35c97ea4a13e5b886e63d5f73a3e0985f160e95d8d320cb6a0",
+        "scripts/test_loop_core.py": "6ff3546f93f49f334646dd5d657182b5fc807b9b62d8c82553a91dc8a7ea659d",
+        "scripts/test_manual_drive.py": "15ca429335ac21bc8fb2f3711aa4a6eedd5695d54de63b25986e867a1eadae05",
+        "scripts/test_manual_mode.py": "0e236a3876323c202991913a10a5cd1069b744e78d502108cf716b217e3f1cf4",
+        "scripts/test_manual_panel.py": "d59af34786d7e64dbef3f738c56b0e682565ba9c3b507c9a87c63705db71bdd4",
+        "scripts/test_mission_control.py": "53e3ff79fef6fe21c4728aa63af97cb366d49158062046c7f8c9988a85dd444c",
+        "scripts/test_obstacle_avoidance.py": "dae61bb755b1a2fea90ac319f6550bfc63d14c5a421b7e5b2b345f0d0c474c2f",
+        "scripts/test_obstacle_contacts.py": "a0b5ac568cb3a18d5170d70317f5a850992e7cf8a9ee63a5c50d5c37f6a392d5",
+        "scripts/test_occupancy_navigation.py": "ed4089347280e3c1d7c7c765f6367c8c9e45a3ff26476df5dcb8047d689b7de6",
+        "scripts/test_optimization.py": "8436e4e6963867cafb6f54e31208f2453dc5c616c1208e05207b9074f190a9e1",
+        "scripts/test_safety_gate.py": "364762f4e4ce475300d971aab368933cda8dd5abfb9ef786dea4fbbdf9212ed7",
+        "scripts/test_startup_supervision.py": "723f7b39e0f1608b35859f5773f47e3f5c3a5002b66730657e3ec307021cbc27",
+        "scripts/validate_all_localization.py": "49c2dec7db93a83cb0d19b803ed7c28149315112f30dab38f860839ec399c7e0",
+        "scripts/validate_avoidance.py": "1eeadbc192d2accc3cc80661b2d7ac4e68d08ba74cb5eedd62d0b3e42dd35c63",
+        "scripts/validate_dynamic_route.py": "2013c51fd31ada87dda91f1917e3a968a848984263d5def37f4bb6bcd17d28ee",
+        "scripts/validate_dynamic_static_course.py": "2d891b0f15632ba5edf8d4bca080f72c85c4279ae7ecaacef7e3ef5733c89315",
+        "scripts/validate_endurance.py": "005948efc2aa2ee731562cb8edab64955ea421d96b44a0f258baf9afa136d877",
+        "scripts/validate_gazebo_shutdown.py": "0f94e675f8e8e8f7b85538c2c9288a3b719fad51d46deef2d52595c2a1d6d784",
+        "scripts/validate_goal_navigation.py": "a3db2c4ebc7e809aabbf03610e7bfb024aec84befa376ecc053ae67359e2feb5",
+        "scripts/validate_large_courses.py": "3860870a3aa1461edc66ab98546385d2222dfa41def4b9c4d9b53a5d92dd6300",
+        "scripts/validate_localized_ui.py": "380851986bb4ec4abf9f4cbc125ca425e311372e3307d4bb2496f18e1250ade0",
+        "scripts/validate_map_coverage.py": "fc98e8a88e4f4543bd693f5a7cdbb576b79466673d9fe8f4d188fdcf1b218ba1",
+        "scripts/validate_mission.py": "f3005ebd43f2f07822196969ed16cb42821ac4edfe18fa8aacb39bbce0a94ce1",
+        "scripts/validate_obstacle_course.py": "febce475752c0bb2a2714beef9dcf5e71a193c5fe3059e286aba783316cd3644",
+        "scripts/validate_optimization.py": "3b1cb6d6847b8779768403921458e1982ed99ea73aad6757199162a766e375b5",
+        "scripts/validate_release.py": "1b427189bb023757a4b76cb2dcb8e9c9eff1a90c9278de43be62551235598ac4",
+        "scripts/validate_saved_routes.py": "7198a8f15c0c4a9123c13761a8d35da0af9d02e7a8229cee0a852e660a6f79db",
+        "scripts/validate_shutdown_timing.py": "4971740952727bf3422678eed4169fd0ae4b4043dbff234023450fda74b6250c",
+        "scripts/validate_slam_stage.py": "ceaefe49c6c4102da837a275e605d364af98d14cac97f103100653ff30f3e08a",
+        "scripts/validate_startup_recovery.py": "7e8fc0da93d5bcc1503dd72963d0d5dbb236fe4f57fb9f19a1df7c3ad9b4c474",
+        "scripts/world_clearance.py": "82e0b6aa8ef7eb0ac5ef8db0efe97ad9e25c2cbec18511b82ee300e786d44ebc",
+        "worlds/large_warehouse_course.sdf": "079a017d3ba0d346113818015bf5d8d1e31b93b0f5f4f47bc09ab9a049427f86"
+      },
+      "max_navigation_age_seconds": 0.7712308339978335,
+      "max_status_update_age_seconds": 3.0464503969997168,
+      "passed": true,
+      "initial_error_m": 2.2293278334473666e-13,
+      "initial_truth_map_xy": [
+        0.0,
+        -2.2293278334473143e-13
+      ],
+      "initial_estimated_pose": [
+        4.8211816155316335e-20,
+        -6.121987438095171e-51,
+        0.0
+      ],
+      "ground_truth_subscribers": [
+        [
+          "saved_routes_verifier",
+          "/"
+        ]
+      ],
+      "startup_retries": 0,
+      "elapsed_seconds": 325.2503813189978,
+      "mission": {
+        "state": "completed",
+        "detail": "すべての配送地点を完了しました",
+        "paused": false,
+        "index": 8,
+        "total": 8,
+        "remaining": 0.0,
+        "points": [
+          {
+            "x": 19.991,
+            "y": 0.017,
+            "wait": 2.0
+          },
+          {
+            "x": 19.991,
+            "y": 5.017,
+            "wait": 2.0
+          },
+          {
+            "x": -0.009,
+            "y": 5.017,
+            "wait": 2.0
+          },
+          {
+            "x": -0.009,
+            "y": 10.017,
+            "wait": 2.0
+          },
+          {
+            "x": 19.991,
+            "y": 10.017,
+            "wait": 2.0
+          },
+          {
+            "x": 19.991,
+            "y": 15.017,
+            "wait": 2.0
+          },
+          {
+            "x": -0.009,
+            "y": 15.017,
+            "wait": 2.0
+          },
+          {
+            "x": -0.009,
+            "y": 0.017,
+            "wait": 2.0
+          }
+        ]
+      },
+      "endpoint_error_m": 0.006282953234484764,
+      "endpoint_truth_map_xy": [
+        -0.013420782536071485,
+        0.17308742837448232
+      ],
+      "endpoint_estimated_pose": [
+        -0.010917123297734614,
+        0.16732486021740053,
+        -1.5737988677276384
+      ],
+      "estimated_goal_distance_m": 0.1503370844506429,
+      "truth_goal_distance_m": 0.1561500195798591,
+      "actual_speed_mps": 0.0,
+      "actual_turn_rate_rps": 0.0,
+      "collision_count": 0,
+      "shutdown_seconds": 0.7857521580008324,
+      "launch_exit_code": 0,
+      "shutdown_acknowledged": true,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          43937.520337394
+        ],
+        [
+          "pause_acknowledged",
+          43937.819112309
+        ],
+        [
+          "stats_requested",
+          43937.819474587
+        ],
+        [
+          "pause_applied",
+          43937.906110185
+        ],
+        [
+          "SIGINT",
+          43937.906255909
+        ]
+      ]
+    }
+  ],
+  "all_passed": true,
+  "removed_panel_truth_subscriptions": 1,
+  "finished_at_jst": "2026-10-03T00:43:21+09:00"
+}

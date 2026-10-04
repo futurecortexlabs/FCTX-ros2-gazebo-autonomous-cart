@@ -1,0 +1,13 @@
+{
+  "all_passed": true,
+  "test_count": 9,
+  "exit_code": 0,
+  "source_sha256": {
+    "scripts/validate_endurance.py": "54b9288e11bced4e601d38e054d4420715ac78fab7649c25b4342f80c1e8b2c5",
+    "scripts/validate_saved_routes.py": "605e37b49e402ce448bb10dfe1395139abd0f8e761ea603d5b6c6f247ae855a1",
+    "scripts/validate_map_coverage.py": "d20d3b07c062206ab3f0a70706b794df51c57c61c3b2285564f9aa2bb074b6d8",
+    "scripts/test_validation_processes.py": "353230a5c0c93351585e79de1653b6e46eacbee73c5f608932521ef7a63787e7"
+  },
+  "created_at": 1790961942.4595082,
+  "scope": "Four owned-process cases, including a same-PGID child born after snapshot with unrelated-project exclusion; five finalization cases cover KeyboardInterrupt/SystemExit(0)/ROS cleanup failures and success order. No Gazebo startup or new route/endurance claim."
+}

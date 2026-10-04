@@ -1,0 +1,375 @@
+{
+  "test_scope": "Isolated Circle low-speed cadence diagnostic, not a full-course SLAM pass",
+  "canonical_source_or_config_modified": false,
+  "distribution_maps_modified": false,
+  "ros_domain_id": 79,
+  "gz_partition": "isolated_test_partition",
+  "configuration_change": {
+    "semantic_parameters": {
+      "minimum_travel_distance": [
+        0.08,
+        0.02
+      ],
+      "minimum_travel_heading": [
+        0.08,
+        0.02
+      ]
+    },
+    "yaml_comment": "低速時も照合更新を得るため移動量の間引きを小さくする。1.5秒の更新停止監視は維持。",
+    "baseline_sha256": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f",
+    "candidate_sha256": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+    "bridge_correction_watchdog_wall_s": 1.5,
+    "bridge_motion_thresholds": {
+      "linear_mps": 0.02,
+      "angular_rps": 0.04
+    },
+    "all_other_product_source_and_yaml_parameters_unchanged": true,
+    "subsequent_parent_decision": "Parent adopted this exact candidate YAML after the copy-only diagnostics; the experiments themselves did not modify canonical configuration."
+  },
+  "source_fingerprints_candidate": {
+    "scripts/course_selector.py": "c8621f1bc2701eb35bd0df8838ae3905b6636ae98dbf45abce8ffd8ca4479d72",
+    "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5",
+    "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+    "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+    "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+    "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e"
+  },
+  "measurements": {
+    "baseline": {
+      "raw_observer_sha256": "b398350d7006cfdee65d9bccf6127ac745517c87f1aa79440ef128d981c94f16",
+      "active_definition": "controller auto+navigating AND current safety topic is not user_stop; shutdown/paused tail excluded",
+      "active_samples": 25,
+      "near_0_05mps_samples": 25,
+      "near_speed_sample_span_s": 21.67339293900295,
+      "stale_status_samples": 4,
+      "maximum_new_stamp_receipt_age_s": {
+        "correction_pose": 1.6934613159974106,
+        "scan": 0.039004367994493805,
+        "imu": 0.00800301299750572,
+        "wheel_odom": 0.017097042000386864,
+        "localized_odom": 0.1978119630002766
+      },
+      "clock_wall_rtf_for_active_sample_span": 0.9964291267536761,
+      "native_stats_delta_rtf": {
+        "derivation": "delta simTime / delta realTime between adjacent unpaused active samples",
+        "mean": 0.996836900261213,
+        "median": 0.9999998196986501,
+        "minimum": 0.9262795859006602,
+        "maximum": 1.000188711843061
+      },
+      "system_cpu_percent": {
+        "median": 18.9,
+        "minimum": 9.7,
+        "maximum": 24.1
+      },
+      "slam_cpu_percent_one_core_units": {
+        "median": 10.0,
+        "minimum": 6.0,
+        "maximum": 14.4
+      },
+      "owned_cpu_percent_one_core_units": {
+        "median": 247.7,
+        "minimum": 209.5,
+        "maximum": 339.0
+      }
+    },
+    "candidate": {
+      "raw_observer_sha256": "d3100f8a8a593b94e4155459057f5aeddb343c900459948360ef516cc4b29067",
+      "active_definition": "controller auto+navigating AND current safety topic is not user_stop; shutdown/paused tail excluded",
+      "active_samples": 23,
+      "near_0_05mps_samples": 23,
+      "near_speed_sample_span_s": 20.6646497010006,
+      "stale_status_samples": 0,
+      "maximum_new_stamp_receipt_age_s": {
+        "correction_pose": 0.46225924000464147,
+        "scan": 0.054048058002081234,
+        "imu": 0.008416361000854522,
+        "wheel_odom": 0.01841250600409694,
+        "localized_odom": 0.0481996610033093
+      },
+      "clock_wall_rtf_for_active_sample_span": 1.000065343425557,
+      "native_stats_delta_rtf": {
+        "derivation": "delta simTime / delta realTime between adjacent unpaused active samples",
+        "mean": 0.9999993254492621,
+        "median": 0.9999996089228922,
+        "minimum": 0.9999800996023717,
+        "maximum": 1.0000150002250112
+      },
+      "system_cpu_percent": {
+        "median": 13.9,
+        "minimum": 10.5,
+        "maximum": 20.3
+      },
+      "slam_cpu_percent_one_core_units": {
+        "median": 13.0,
+        "minimum": 11.0,
+        "maximum": 22.0
+      },
+      "owned_cpu_percent_one_core_units": {
+        "median": 230.0,
+        "minimum": 209.0,
+        "maximum": 314.0
+      }
+    },
+    "short_goal": {
+      "raw_observer_sha256": "ebe99a9791c7add58389cbc38bde76c625c1f1ec907013df208351cfda42f87b",
+      "active_definition": "controller auto+navigating AND current safety topic is not user_stop; shutdown/paused tail excluded",
+      "active_samples": 5,
+      "near_0_05mps_samples": 4,
+      "near_speed_sample_span_s": 2.9999500929989154,
+      "stale_status_samples": 0,
+      "maximum_new_stamp_receipt_age_s": {
+        "correction_pose": 0.4338668470008997,
+        "scan": 0.005370032995415386,
+        "imu": 0.003458601000602357,
+        "wheel_odom": 0.01328311899851542,
+        "localized_odom": 0.013013857998885214
+      },
+      "clock_wall_rtf_for_active_sample_span": 0.9999948312755581,
+      "native_stats_delta_rtf": {
+        "derivation": "delta simTime / delta realTime between adjacent unpaused active samples",
+        "mean": 0.9999995881795416,
+        "median": 0.9999989998008878,
+        "minimum": 0.9999971736190983,
+        "maximum": 1.0000031794972926
+      },
+      "system_cpu_percent": {
+        "median": 10.3,
+        "minimum": 9.9,
+        "maximum": 14.1
+      },
+      "slam_cpu_percent_one_core_units": {
+        "median": 13.0,
+        "minimum": 12.0,
+        "maximum": 14.0
+      },
+      "owned_cpu_percent_one_core_units": {
+        "median": 233.0,
+        "minimum": 217.0,
+        "maximum": 253.0
+      }
+    }
+  },
+  "cleanup": {
+    "baseline": {
+      "completed": true,
+      "elapsed_s": 3.3559516639943467,
+      "launch_exit_code": 0,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          47515.574954734
+        ],
+        [
+          "pause_acknowledged",
+          47515.91980745
+        ],
+        [
+          "stats_requested",
+          47515.920170494
+        ],
+        [
+          "pause_applied",
+          47516.112197861
+        ],
+        [
+          "slam_deactivate_requested",
+          47516.112768479
+        ],
+        [
+          "slam_deactivate_acknowledged",
+          47517.516305675
+        ],
+        [
+          "SIGINT",
+          47517.516342191
+        ]
+      ],
+      "forced": false,
+      "native_or_shutdown_errors": [],
+      "terminal_cleanup_errors": [],
+      "remaining_owned_process_count": 0,
+      "passed": true
+    },
+    "candidate": {
+      "completed": true,
+      "elapsed_s": 2.6057491219980875,
+      "launch_exit_code": 0,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          48203.525004098
+        ],
+        [
+          "pause_acknowledged",
+          48203.807431352
+        ],
+        [
+          "stats_requested",
+          48203.807839215
+        ],
+        [
+          "pause_applied",
+          48203.914831411
+        ],
+        [
+          "slam_deactivate_requested",
+          48203.915157851
+        ],
+        [
+          "slam_deactivate_acknowledged",
+          48204.718562059
+        ],
+        [
+          "SIGINT",
+          48204.71858697
+        ]
+      ],
+      "forced": false,
+      "native_or_shutdown_errors": [],
+      "terminal_cleanup_errors": [],
+      "remaining_owned_process_count": 0,
+      "passed": true
+    },
+    "short_goal": {
+      "completed": true,
+      "elapsed_s": 4.455176278999716,
+      "launch_exit_code": 0,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          48368.972615709
+        ],
+        [
+          "pause_acknowledged",
+          48369.293621694
+        ],
+        [
+          "stats_requested",
+          48369.293991054
+        ],
+        [
+          "pause_applied",
+          48369.505957243
+        ],
+        [
+          "slam_deactivate_requested",
+          48369.506365221
+        ],
+        [
+          "slam_deactivate_acknowledged",
+          48372.107792873
+        ],
+        [
+          "SIGINT",
+          48372.107818311
+        ]
+      ],
+      "forced": false,
+      "native_or_shutdown_errors": [],
+      "terminal_cleanup_errors": [],
+      "remaining_owned_process_count": 0,
+      "passed": true
+    }
+  },
+  "external_ground_truth_evaluation": {
+    "baseline": {
+      "estimated_pose": [
+        1.1501677876668548,
+        0.22863653259906827,
+        0.1929995231973667
+      ],
+      "truth_map_xy": [
+        1.168244873644096,
+        0.23424999866644045
+      ],
+      "position_error_m": 0.01892860371813278,
+      "yaw_error_rad": 1.3197694326283482e-09
+    },
+    "candidate": {
+      "estimated_pose": [
+        1.1904090114288512,
+        0.23521402670963326,
+        0.1953390952781721
+      ],
+      "truth_map_xy": [
+        1.1876719539882732,
+        0.24178925157104744
+      ],
+      "position_error_m": 0.007122153144322499,
+      "yaw_error_rad": 8.766651016234306e-10
+    },
+    "short_goal": {
+      "estimated_pose": [
+        0.3199685433693677,
+        0.06594281160257036,
+        0.1976826174186275
+      ],
+      "truth_map_xy": [
+        0.31892945482203167,
+        0.07026641559981074
+      ],
+      "position_error_m": 0.0044467130033495434,
+      "yaw_error_rad": 1.3572476476042539e-14
+    }
+  },
+  "ground_truth_used_for_control": false,
+  "contacts": {
+    "baseline": 0,
+    "candidate": 0,
+    "short_goal": 0
+  },
+  "normal_25s_deadline_trials": {
+    "baseline": {
+      "goal_m": [
+        1.72,
+        0.34
+      ],
+      "remaining_distance_m": 0.5806122390064173
+    },
+    "candidate": {
+      "goal_m": [
+        1.72,
+        0.34
+      ],
+      "remaining_distance_m": 0.5398580511339773
+    },
+    "interpretation": "The 25s deadline cannot complete a ~1.75m goal at .05m/s; expected TimeoutError is distinct from the baseline stale-status defect."
+  },
+  "short_goal": {
+    "goal_map_m": [
+      0.49,
+      0.1
+    ],
+    "navigation_state": "arrived",
+    "final_distance_to_goal_m": 0.17945860588613538,
+    "unchanged_arrival_tolerance_m": 0.18,
+    "observed_goal_arrival": true,
+    "station_progress_count": 2,
+    "wrapper_sha256": "1e8bf01398708bd15f55bfc6fa8b39dd11c67201772d3a38551856bab6e0a5a6",
+    "wrapper_limitations": "The wrapper reduced stations to the initial pose and a .5m map goal. The inherited world_xy field is unused and is not this new target. Its save override did not affect explore because save is locally imported; the partial observed map was saved inside the copy, failed full-course coverage, and was rolled back. No full-tour success is claimed.",
+    "validator_all_passed": false,
+    "expected_partial_coverage_failure": true
+  },
+  "interpretation": "Fresh sensors and RTF near 1 with .08/.05≈1.6sim s between processed poses explain baseline 1.5wall s stale notifications. Changing only travel distance/heading to .02/.02 yielded zero stale samples, maximum moving pose receipt age below .5s, normal short-goal arrival and clean native shutdown.",
+  "limitations": [
+    "One-second samples do not prove uninterrupted exact velocity or capture every subsecond stop. Baseline stale samples still had wheel≈.05 and safety driving; no full wheel stop was captured. New correction callbacks cleared the stale latch.",
+    "Lower motion thresholds accept more scans and grow the SLAM graph faster; full seven-course regressions are required before adopting.",
+    "The watchdog uses wall time; low RTF or missing fresh sensors must still trigger the existing safety response. No latch or age limit was relaxed."
+  ],
+  "initial_artifact_sha256": {
+    "maps/loop_course/map.yaml": "d6707fad9f79635501161b9a174ee08cefcafbdf2a1c3ea61d7c77d57caa5b73",
+    "maps/loop_course/map.pgm": "467b4b575909f8cb513aa3f274ec2ce78f6d0ef71b4de46a1ccce4049e2ad5fc",
+    "maps/loop_course/map_metadata.json": "a82280a92d0fee809755cdd940674222cfd09b5c7f7a9c9fe8db11ab90221828",
+    "routes/loop_course_coverage_delivery.json": "b4c77ebf99cedd7a61e111cf6ad51986a264115b8d436baa991399f1264a427d"
+  },
+  "final_artifact_sha256": {
+    "maps/loop_course/map.yaml": "d6707fad9f79635501161b9a174ee08cefcafbdf2a1c3ea61d7c77d57caa5b73",
+    "maps/loop_course/map.pgm": "467b4b575909f8cb513aa3f274ec2ce78f6d0ef71b4de46a1ccce4049e2ad5fc",
+    "maps/loop_course/map_metadata.json": "a82280a92d0fee809755cdd940674222cfd09b5c7f7a9c9fe8db11ab90221828",
+    "routes/loop_course_coverage_delivery.json": "b4c77ebf99cedd7a61e111cf6ad51986a264115b8d436baa991399f1264a427d"
+  },
+  "artifacts_unchanged": true,
+  "active_owned_copy_processes": [],
+  "lock_reacquired": true
+}

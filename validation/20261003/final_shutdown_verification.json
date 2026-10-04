@@ -1,0 +1,114 @@
+{
+  "verified_at_jst": "2026-10-03T01:53:00.792816+09:00",
+  "scope": "Final nine-condition shutdown after bounded SLAM lifecycle shutdown. Short SLAM seven cases recorded separately.",
+  "exit_code": 0,
+  "elapsed_seconds": 47.56306871799461,
+  "checks": {
+    "slam_all_seven_complete": true,
+    "simulation_amcl_all_nine_complete": true,
+    "both_true_exit_zero": true,
+    "all_case_cleanup": true,
+    "every_slam_launch_deactivated": true,
+    "startup_readiness_observed": true,
+    "owned_processes_zero": true,
+    "critical_sources_match_windows_and_unchanged": true,
+    "unit_34_pass": true
+  },
+  "passed": true,
+  "owned_remaining_processes": [],
+  "ros_domain_id": "76",
+  "gz_partition": "isolated_test_partition",
+  "critical_source_comparison": {
+    "scripts/course_selector.py": {
+      "tested_sha256": "c8621f1bc2701eb35bd0df8838ae3905b6636ae98dbf45abce8ffd8ca4479d72",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "c8621f1bc2701eb35bd0df8838ae3905b6636ae98dbf45abce8ffd8ca4479d72",
+      "windows_sha256": "c8621f1bc2701eb35bd0df8838ae3905b6636ae98dbf45abce8ffd8ca4479d72"
+    },
+    "scripts/test_startup_supervision.py": {
+      "tested_sha256": "79573523abca5edfe2b25e99072c15f93f934af72a5db38445ad9b60da25b901",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "79573523abca5edfe2b25e99072c15f93f934af72a5db38445ad9b60da25b901",
+      "windows_sha256": "79573523abca5edfe2b25e99072c15f93f934af72a5db38445ad9b60da25b901"
+    },
+    "scripts/manual_panel.py": {
+      "tested_sha256": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610",
+      "windows_sha256": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610"
+    },
+    "scripts/validation_processes.py": {
+      "tested_sha256": "91ce0478a61bba2cca0b82cb0ab050dd0e3a254497cd143b3df035dd82ea3730",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "91ce0478a61bba2cca0b82cb0ab050dd0e3a254497cd143b3df035dd82ea3730",
+      "windows_sha256": "91ce0478a61bba2cca0b82cb0ab050dd0e3a254497cd143b3df035dd82ea3730"
+    },
+    "scripts/validate_shutdown_timing.py": {
+      "tested_sha256": "3694d4014fd620856ea04281d07998eb83153e17b14bc3dca239a7df609f89b9",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "3694d4014fd620856ea04281d07998eb83153e17b14bc3dca239a7df609f89b9",
+      "windows_sha256": "3694d4014fd620856ea04281d07998eb83153e17b14bc3dca239a7df609f89b9"
+    },
+    "scripts/localization_bridge.py": {
+      "tested_sha256": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+      "windows_sha256": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8"
+    },
+    "scripts/loop_controller.py": {
+      "tested_sha256": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+      "windows_sha256": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e"
+    },
+    "launch/loop_course.launch.py": {
+      "tested_sha256": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+      "windows_sha256": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2"
+    },
+    "run_loop.sh": {
+      "tested_sha256": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734",
+      "windows_sha256": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734"
+    },
+    "config/slam.yaml": {
+      "tested_sha256": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f",
+      "windows_sha256": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f"
+    },
+    "config/ekf.yaml": {
+      "tested_sha256": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+      "windows_sha256": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672"
+    },
+    "config/amcl.yaml": {
+      "tested_sha256": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+      "windows_sha256": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550"
+    },
+    "worlds/slalom_course.sdf": {
+      "tested_sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3",
+      "evidence_basis": "Same isolated copy previous integration after-manifest; subsequent sync copied only course_selector.py and test_startup_supervision.py",
+      "after_sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3",
+      "windows_sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3"
+    },
+    "worlds/oval_course.sdf": {
+      "tested_sha256": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+      "windows_sha256": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b"
+    },
+    "worlds/warehouse_course.sdf": {
+      "tested_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+      "evidence_basis": "Recorded SLAM/AMI test source manifest",
+      "after_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+      "windows_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c"
+    }
+  },
+  "critical_source_mismatches": []
+}

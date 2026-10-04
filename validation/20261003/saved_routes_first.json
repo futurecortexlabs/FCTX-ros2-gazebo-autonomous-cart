@@ -1,0 +1,340 @@
+{
+  "started_at_jst": "2026-10-03T00:12:34+09:00",
+  "scope": "AMCL restart with saved observed maps, saved map-frame full inspection routes, final error and stop",
+  "ros_domain_id": "77",
+  "gz_partition": "isolated_test_partition",
+  "endpoint_error_limit_m": 0.35,
+  "results": [
+    {
+      "course": "loop_course.sdf",
+      "route": "routes/loop_course_coverage_delivery.json",
+      "route_frame": "map",
+      "point_count": 16,
+      "source_files_sha256": {
+        "worlds/loop_course.sdf": "8eb5962a5fa114c075fa14265f87044fb5872539d0eb176656129e38200e5202",
+        "routes/loop_course_coverage_delivery.json": "b4c77ebf99cedd7a61e111cf6ad51986a264115b8d436baa991399f1264a427d",
+        "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+        "scripts/course_selector.py": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+        "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+        "scripts/validate_saved_routes.py": "eaec1a5076d8a2720eb7404e04e2fe37a99ab26d3b6d64e1f147472ba80c2982",
+        "maps/loop_course/map.pgm": "467b4b575909f8cb513aa3f274ec2ce78f6d0ef71b4de46a1ccce4049e2ad5fc",
+        "maps/loop_course/map.yaml": "d6707fad9f79635501161b9a174ee08cefcafbdf2a1c3ea61d7c77d57caa5b73",
+        "maps/loop_course/map_metadata.json": "a82280a92d0fee809755cdd940674222cfd09b5c7f7a9c9fe8db11ab90221828"
+      },
+      "max_navigation_age_seconds": 0.24742976899869973,
+      "max_status_update_age_seconds": 3.04227259199979,
+      "passed": true,
+      "initial_error_m": 3.0142492681904444e-19,
+      "initial_truth_map_xy": [
+        1.4613623040168256e-21,
+        8.948263340044034e-38
+      ],
+      "initial_estimated_pose": [
+        3.0288628912306126e-19,
+        -2.7491691017565354e-51,
+        0.0
+      ],
+      "ground_truth_subscribers": [
+        [
+          "saved_routes_verifier",
+          "/"
+        ]
+      ],
+      "startup_retries": 0,
+      "elapsed_seconds": 129.09546318100183,
+      "mission": {
+        "state": "completed",
+        "detail": "すべての配送地点を完了しました",
+        "paused": false,
+        "index": 16,
+        "total": 16,
+        "remaining": 0.0,
+        "points": [
+          {
+            "x": 1.704,
+            "y": 0.334,
+            "wait": 2.0
+          },
+          {
+            "x": 3.204,
+            "y": 1.334,
+            "wait": 2.0
+          },
+          {
+            "x": 4.154,
+            "y": 2.784,
+            "wait": 2.0
+          },
+          {
+            "x": 4.504,
+            "y": 4.484,
+            "wait": 2.0
+          },
+          {
+            "x": 4.154,
+            "y": 6.234,
+            "wait": 2.0
+          },
+          {
+            "x": 3.204,
+            "y": 7.684,
+            "wait": 2.0
+          },
+          {
+            "x": 1.704,
+            "y": 8.634,
+            "wait": 2.0
+          },
+          {
+            "x": 0.004,
+            "y": 8.984,
+            "wait": 2.0
+          },
+          {
+            "x": -1.746,
+            "y": 8.634,
+            "wait": 2.0
+          },
+          {
+            "x": -3.196,
+            "y": 7.684,
+            "wait": 2.0
+          },
+          {
+            "x": -4.096,
+            "y": 6.234,
+            "wait": 2.0
+          },
+          {
+            "x": -4.496,
+            "y": 4.484,
+            "wait": 2.0
+          },
+          {
+            "x": -4.146,
+            "y": 2.784,
+            "wait": 2.0
+          },
+          {
+            "x": -3.196,
+            "y": 1.334,
+            "wait": 2.0
+          },
+          {
+            "x": -1.746,
+            "y": 0.334,
+            "wait": 2.0
+          },
+          {
+            "x": 0.004,
+            "y": -0.016,
+            "wait": 2.0
+          }
+        ]
+      },
+      "endpoint_error_m": 0.03328216159721833,
+      "endpoint_truth_map_xy": [
+        -0.13987099143313075,
+        -0.0017311645068156607
+      ],
+      "endpoint_estimated_pose": [
+        -0.1679162495320956,
+        0.016189934196829733,
+        -0.20641679238025906
+      ],
+      "estimated_goal_distance_m": 0.1749039413986374,
+      "truth_goal_distance_m": 0.14457683715686806,
+      "actual_speed_mps": 0.0,
+      "actual_turn_rate_rps": 0.0,
+      "collision_count": 0,
+      "shutdown_seconds": 0.8945298709950293,
+      "launch_exit_code": 0,
+      "shutdown_acknowledged": true,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          42412.020894456
+        ],
+        [
+          "pause_acknowledged",
+          42412.319323318
+        ],
+        [
+          "stats_requested",
+          42412.319797284
+        ],
+        [
+          "pause_applied",
+          42412.509625828
+        ],
+        [
+          "SIGINT",
+          42412.509657296
+        ]
+      ]
+    },
+    {
+      "course": "warehouse_course.sdf",
+      "route": "routes/warehouse_course_coverage_delivery.json",
+      "route_frame": "map",
+      "point_count": 12,
+      "source_files_sha256": {
+        "worlds/warehouse_course.sdf": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+        "routes/warehouse_course_coverage_delivery.json": "dd3abacb152b31536d18659d996136dc289536344ed24d5cda5219a757c551f3",
+        "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+        "scripts/course_selector.py": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+        "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+        "scripts/validate_saved_routes.py": "eaec1a5076d8a2720eb7404e04e2fe37a99ab26d3b6d64e1f147472ba80c2982",
+        "maps/warehouse_course/map.pgm": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+        "maps/warehouse_course/map.yaml": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+        "maps/warehouse_course/map_metadata.json": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc"
+      },
+      "max_navigation_age_seconds": 0.28124972799560055,
+      "max_status_update_age_seconds": 3.0603305930053466,
+      "passed": true,
+      "initial_error_m": 2.2293278334475703e-13,
+      "initial_truth_map_xy": [
+        1.569354258946552e-23,
+        -2.2293278334473143e-13
+      ],
+      "initial_estimated_pose": [
+        -1.0680854698400546e-19,
+        -4.255326861595614e-51,
+        0.0
+      ],
+      "ground_truth_subscribers": [
+        [
+          "saved_routes_verifier",
+          "/"
+        ]
+      ],
+      "startup_retries": 0,
+      "elapsed_seconds": 163.66490301100566,
+      "mission": {
+        "state": "completed",
+        "detail": "すべての配送地点を完了しました",
+        "paused": false,
+        "index": 12,
+        "total": 12,
+        "remaining": 0.0,
+        "points": [
+          {
+            "x": 4.8,
+            "y": 0.0,
+            "wait": 2.0
+          },
+          {
+            "x": 4.8,
+            "y": 3.4,
+            "wait": 2.0
+          },
+          {
+            "x": 4.8,
+            "y": 6.8,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 6.8,
+            "wait": 2.0
+          },
+          {
+            "x": -4.8,
+            "y": 6.8,
+            "wait": 2.0
+          },
+          {
+            "x": -4.8,
+            "y": 3.4,
+            "wait": 2.0
+          },
+          {
+            "x": -4.8,
+            "y": 0.0,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 3.4,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 6.8,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 3.4,
+            "wait": 2.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "wait": 2.0
+          }
+        ]
+      },
+      "endpoint_error_m": 0.025571479019258308,
+      "endpoint_truth_map_xy": [
+        0.02542762948321668,
+        0.17312918826627843
+      ],
+      "endpoint_estimated_pose": [
+        0.001124755788259154,
+        0.16517488946630182,
+        -1.570033749565549
+      ],
+      "estimated_goal_distance_m": 0.16517871892525454,
+      "truth_goal_distance_m": 0.17498651425431686,
+      "actual_speed_mps": 0.0,
+      "actual_turn_rate_rps": 0.0,
+      "collision_count": 0,
+      "shutdown_seconds": 0.978922282003623,
+      "launch_exit_code": 0,
+      "shutdown_acknowledged": true,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          42581.827661849
+        ],
+        [
+          "pause_acknowledged",
+          42582.210637839
+        ],
+        [
+          "stats_requested",
+          42582.211591415
+        ],
+        [
+          "pause_applied",
+          42582.316925729
+        ],
+        [
+          "SIGINT",
+          42582.316960133
+        ]
+      ]
+    }
+  ],
+  "all_passed": true,
+  "removed_panel_truth_subscriptions": 1,
+  "finished_at_jst": "2026-10-03T00:18:12+09:00"
+}

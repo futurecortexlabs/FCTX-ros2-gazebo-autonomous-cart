@@ -1,0 +1,44 @@
+{
+  "verified_at_jst": "2026-10-03T00:46:10.700957+09:00",
+  "evidence": "endurance_validation.json",
+  "all_exercised_product_paths_matched": true,
+  "scope": "AMCL runtime and preserved warehouse map/route; unused box-operation helper change separately validated",
+  "files_sha256": {
+    "scripts/capture_overview.py": "19b042a04eb6fbb18810725b7a6804edd7ad4a9878f144b59643fac579364b59",
+    "scripts/course_selector.py": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+    "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+    "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+    "scripts/goal_panel.py": "3e5c03c8636fd94824957657db822a918fec034602c0f39a89031ca21711e703",
+    "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+    "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+    "scripts/loop_core.py": "db033783fcb46fb7d1ae28157528e70e80b2365f0b6a6ed866d16f38a13f1235",
+    "scripts/manual_panel.py": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610",
+    "scripts/map_cache.py": "83762936949d65d47537b4ad531bbc2faf5c36ec52e9f2394634509f04c86ecb",
+    "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+    "scripts/mission_panel.py": "80e9994ab70687308ccb61ca5902217be7a151e79f64487ed7bb306d6f719223",
+    "scripts/obstacle_avoidance.py": "9fe91cb44676bd7c1e88fa14641a2d3f70b1b62f090b6b9e5e0e73cbf32b453a",
+    "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+    "scripts/resume_large_validation.py": "63dea0287b7aa31a24ff1f1d07b00095746ab4ef5a71deaa9b8a39f7eca3f50d",
+    "scripts/save_slam_map.py": "baa4dfebfac2565181cedd2d1f826865ea981219bc4ba2e858fc69944e7e7098",
+    "scripts/speed_control.py": "ddbd9c64732ff763e43efbaae585442b7f54c96c1b584eb73ac0f873c479ad36",
+    "scripts/speed_settings.py": "70c8e7833402cfd893bf465a4dd35742aef75714ab7e3562bd9eb889f9502d72",
+    "scripts/world_clearance.py": "82e0b6aa8ef7eb0ac5ef8db0efe97ad9e25c2cbec18511b82ee300e786d44ebc",
+    "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+    "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+    "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+    "run_loop.sh": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734",
+    "fonts/fonts.conf": "aa64b9225aaada1794e1592640ccca8c397cf06307cb60cdd8f7106a1fa38623",
+    "worlds/warehouse_course.sdf": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+    "maps/warehouse_course/map.pgm": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+    "maps/warehouse_course/map.yaml": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+    "maps/warehouse_course/map_metadata.json": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc",
+    "routes/warehouse_course_coverage_delivery.json": "dd3abacb152b31536d18659d996136dc289536344ed24d5cda5219a757c551f3"
+  },
+  "not_exercised_differences": {
+    "scripts/obstacle_control.py": {
+      "tested_sha256": "95dbc67de8ec756e1b09b7c58344c75f1e2509efbb93577e4b52853f7c1abf33",
+      "current_sha256": "d32102150f590ed0e7db0649e0f9fd1e9362d5c72608eacd954a56f72d4856f7",
+      "scope": "Box insertion/deletion helper not invoked in AMCL endurance; final helper exercised by dynamic_route_validation.json and obstacle_partition_validation.json"
+    }
+  }
+}

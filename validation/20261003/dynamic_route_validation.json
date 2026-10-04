@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "report": {
+    "completed": false,
+    "target_laps": 0,
+    "laps": 0.08465,
+    "sim_seconds": 57.46,
+    "completion_sim_seconds": null,
+    "course_world": "worlds/large_warehouse_course.sdf",
+    "min_body_environment_clearance_lower_bound_m": 0.31036,
+    "wall_contact_count": 0,
+    "obstacle_contact_count": 0,
+    "collision_count": 0,
+    "floor_contact_count": 114874,
+    "contact_topics_received": [
+      "front_left",
+      "front_right",
+      "rear_left",
+      "rear_right"
+    ],
+    "min_body_wall_clearance_lower_bound_m": 1.79223,
+    "min_lidar_distance_m": 0.93052,
+    "max_radial_error_m": 8.0,
+    "odometry_samples": 1691,
+    "valid_scan_messages": 1151,
+    "safety_state": "stopped",
+    "control_mode": "auto",
+    "position": [
+      -3.068089953014842,
+      -7.350165174356867,
+      -1.14426087983879
+    ],
+    "autonomy": "Known-map goal navigation",
+    "mission": {
+      "state": "idle",
+      "detail": "配送地点を登録してください",
+      "paused": false,
+      "index": 0,
+      "total": 0,
+      "remaining": 0.0,
+      "points": []
+    },
+    "replan_count": 1,
+    "dynamic_obstacle_count": 13,
+    "navigation_state": "arrived",
+    "navigation_goal": [
+      -3.0,
+      -7.5
+    ],
+    "goal_distance_m": 0.17656054291689557,
+    "navigation_detail": "目的地に到着しました（許容距離0.18m）",
+    "planner_state": "waiting_for_scan",
+    "auto_speed_limit_mps": 0.45,
+    "selected_velocity": [
+      0.0,
+      0.0
+    ],
+    "actual_velocity": [
+      0.0,
+      0.0
+    ],
+    "localization": "simulation",
+    "coordinate_frame": "world"
+  }
+}

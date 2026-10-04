@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "world": "large_warehouse_course.sdf",
+  "points": [
+    {
+      "x": -7.0,
+      "y": -7.5,
+      "wait": 3.0
+    },
+    {
+      "x": -4.0,
+      "y": -7.5,
+      "wait": 3.0
+    },
+    {
+      "x": -10.0,
+      "y": -7.5,
+      "wait": 3.0
+    }
+  ]
+}

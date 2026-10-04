@@ -1,0 +1,121 @@
+{
+  "scope": "Post-run identity check of shipped SLAM maps/worlds plus AMCL full-route evidence. Original generation JSONs predating final verdict/cleanup strengthening retain their version.",
+  "results": [
+    {
+      "course": "loop_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/loop_course.sdf": "8eb5962a5fa114c075fa14265f87044fb5872539d0eb176656129e38200e5202",
+        "maps/loop_course/map.pgm": "467b4b575909f8cb513aa3f274ec2ce78f6d0ef71b4de46a1ccce4049e2ad5fc",
+        "maps/loop_course/map.yaml": "d6707fad9f79635501161b9a174ee08cefcafbdf2a1c3ea61d7c77d57caa5b73",
+        "maps/loop_course/map_metadata.json": "a82280a92d0fee809755cdd940674222cfd09b5c7f7a9c9fe8db11ab90221828",
+        "routes/loop_course_coverage_delivery.json": "b4c77ebf99cedd7a61e111cf6ad51986a264115b8d436baa991399f1264a427d"
+      },
+      "generation_setting": "angle-penalty adjusted, original loop search",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "obstacle_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/obstacle_course.sdf": "11e790adaf12de68e54e93c240e4a6e1e8d29b9345ae6f71d3868f953ec2f167",
+        "maps/obstacle_course/map.pgm": "2662488ee674b4457e48cd3b80ec29a16863f1cdfc7690490d7c8e5b340b12bd",
+        "maps/obstacle_course/map.yaml": "99dd21ce24bbb3ad58d7cd9699cb53fff1459e0d123d4b12e691d684a8b36496",
+        "maps/obstacle_course/map_metadata.json": "2ded0171f02cd226b8477fe7fdb5d796b986ed8096023678fbe71be61796df51",
+        "routes/obstacle_course_coverage_delivery.json": "9a7f4209fe08c829500b9e3b4d3e3b2141768e242209cda26f46fff069d52205"
+      },
+      "generation_setting": "loop-guard",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "oval_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/oval_course.sdf": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+        "maps/oval_course/map.pgm": "746d4948312d90c59b4a959bdbae4fde7ffac77384003cac74187542526b93d3",
+        "maps/oval_course/map.yaml": "39449ba91a9cd3a96220e40a772dbdf67cf76bc78fdd341dfdf5932ae7debdb4",
+        "maps/oval_course/map_metadata.json": "4990712c429046f5d838e807040dddd1664f80524aa91afcc2ee12beb042d7f4",
+        "routes/oval_course_coverage_delivery.json": "f415607e61b0b8453f62f254b5e17d5f76659bd923a71996042197f0def0d1f3"
+      },
+      "generation_setting": "angle-penalty adjusted, original loop search",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "warehouse_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": false,
+      "files_sha256": {
+        "worlds/warehouse_course.sdf": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+        "maps/warehouse_course/map.pgm": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+        "maps/warehouse_course/map.yaml": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+        "maps/warehouse_course/map_metadata.json": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc",
+        "routes/warehouse_course_coverage_delivery.json": "dd3abacb152b31536d18659d996136dc289536344ed24d5cda5219a757c551f3"
+      },
+      "generation_setting": "original EKF/SLAM",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "large_oval_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/large_oval_course.sdf": "643d41775fd4f0e9698e67fe88767364aa6fdff743be517c96e5600a655b8a94",
+        "maps/large_oval_course/map.pgm": "d1c7840f655226496649b413d00cdffffe1df5554f57c5268498a922b4a6f2aa",
+        "maps/large_oval_course/map.yaml": "14800a9916598424eebc8455a22f6c5db5b96e40bce281541c25bf14b507aa05",
+        "maps/large_oval_course/map_metadata.json": "701e3a7a6d103ba4a46580a04f754430195f6f1bd9d8bcb0a1cdd9e81187f508",
+        "routes/large_oval_course_coverage_delivery.json": "f565a100fa5466710abae83abe61239fc9de41fd53c484b8435a4db3050adf99"
+      },
+      "generation_setting": "angle-penalty adjusted, original loop search",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "large_warehouse_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/large_warehouse_course.sdf": "079a017d3ba0d346113818015bf5d8d1e31b93b0f5f4f47bc09ab9a049427f86",
+        "maps/large_warehouse_course/map.pgm": "57a293b5b2c2b8fbd8efdc47859693c5e7e831857d36294d1a4032795f04baeb",
+        "maps/large_warehouse_course/map.yaml": "9beb594e860a30e1f0e08508c40a431780b6552c954af3162042f486319781b8",
+        "maps/large_warehouse_course/map_metadata.json": "2dafedb21daa6b6bd4df738c418e9b19ad918570361895a801747151f3efce38",
+        "routes/large_warehouse_course_coverage_delivery.json": "ecd540ada35051cd3da379f12d711b7d32f061b4ef20d9355c5e2b3e0457665c"
+      },
+      "generation_setting": "angle-penalty adjusted, original loop search",
+      "amcl_evidence": "saved_routes_summary.json"
+    },
+    {
+      "course": "slalom_course.sdf",
+      "map_source": "slam_toolbox",
+      "world_matches": true,
+      "shipped_map_matches_generation_copy": true,
+      "route_matches_generation_copy": true,
+      "files_sha256": {
+        "worlds/slalom_course.sdf": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3",
+        "maps/slalom_course/map.pgm": "c08a8401342386e4f2c64a196da74a06a9017e02a9f6203f46f1873fc0ece011",
+        "maps/slalom_course/map.yaml": "9afdf601a5d292e78e42805a64ef59135679ce33e1a49adcadc7db4ea28adfae",
+        "maps/slalom_course/map_metadata.json": "7b8b5d72e8bd3a552048c4ebf8a213dfeb284207c91a628944cb6ec28140b870",
+        "routes/slalom_course_coverage_delivery.json": "0f8f2a8d4beee50230a8c451225397ac5c7b57c8a9a16f3acc06807a40930626"
+      },
+      "generation_setting": "angle-penalty adjusted, original loop search",
+      "amcl_evidence": "saved_routes_summary.json"
+    }
+  ],
+  "original_mapping_copy_active_process_count": 0,
+  "original_mapping_copy_clean_native_process_count": 9,
+  "final_config_sha256": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f",
+  "note": "Warehouse delivery route was finalized separately from mapping copy; its shipping hash is checked by AMCL and endurance evidence. Later common-configuration SLAM regression creates separate map variants; only Obstacle loop-guard map is shipped. No-loop diagnostic map is not shipped."
+}

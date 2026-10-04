@@ -1,0 +1,186 @@
+{
+  "started_at_jst": "2026-10-03T00:21:24+09:00",
+  "scope": "AMCL restart with saved observed maps, saved map-frame full inspection routes, final error and stop",
+  "ros_domain_id": "77",
+  "gz_partition": "isolated_test_partition",
+  "endpoint_error_limit_m": 0.35,
+  "results": [
+    {
+      "course": "oval_course.sdf",
+      "route": "routes/oval_course_coverage_delivery.json",
+      "route_frame": "map",
+      "point_count": 16,
+      "source_files_sha256": {
+        "worlds/oval_course.sdf": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+        "routes/oval_course_coverage_delivery.json": "f415607e61b0b8453f62f254b5e17d5f76659bd923a71996042197f0def0d1f3",
+        "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+        "scripts/course_selector.py": "5257f46bd85b96c8734b0623383e9ea53aab2ec88fa03da218694014be2c0318",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+        "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+        "scripts/validate_saved_routes.py": "eaec1a5076d8a2720eb7404e04e2fe37a99ab26d3b6d64e1f147472ba80c2982",
+        "maps/oval_course/map.pgm": "746d4948312d90c59b4a959bdbae4fde7ffac77384003cac74187542526b93d3",
+        "maps/oval_course/map.yaml": "39449ba91a9cd3a96220e40a772dbdf67cf76bc78fdd341dfdf5932ae7debdb4",
+        "maps/oval_course/map_metadata.json": "4990712c429046f5d838e807040dddd1664f80524aa91afcc2ee12beb042d7f4"
+      },
+      "max_navigation_age_seconds": 0.2893929139972897,
+      "max_status_update_age_seconds": 3.046745469997404,
+      "passed": true,
+      "initial_error_m": 1.0953014418684212e-20,
+      "initial_truth_map_xy": [
+        -2.11871618695094e-21,
+        -1.297339498325577e-37
+      ],
+      "initial_estimated_pose": [
+        8.834298231733272e-21,
+        1.4990925289486765e-51,
+        0.0
+      ],
+      "ground_truth_subscribers": [
+        [
+          "saved_routes_verifier",
+          "/"
+        ]
+      ],
+      "startup_retries": 0,
+      "elapsed_seconds": 143.61033046100056,
+      "mission": {
+        "state": "completed",
+        "detail": "すべての配送地点を完了しました",
+        "paused": false,
+        "index": 16,
+        "total": 16,
+        "remaining": 0.0,
+        "points": [
+          {
+            "x": 1.719,
+            "y": 0.435,
+            "wait": 2.0
+          },
+          {
+            "x": 3.169,
+            "y": 1.735,
+            "wait": 2.0
+          },
+          {
+            "x": 4.169,
+            "y": 3.685,
+            "wait": 2.0
+          },
+          {
+            "x": 4.519,
+            "y": 5.985,
+            "wait": 2.0
+          },
+          {
+            "x": 4.169,
+            "y": 8.285,
+            "wait": 2.0
+          },
+          {
+            "x": 3.169,
+            "y": 10.235,
+            "wait": 2.0
+          },
+          {
+            "x": 1.719,
+            "y": 11.535,
+            "wait": 2.0
+          },
+          {
+            "x": 0.019,
+            "y": 11.985,
+            "wait": 2.0
+          },
+          {
+            "x": -1.731,
+            "y": 11.535,
+            "wait": 2.0
+          },
+          {
+            "x": -3.181,
+            "y": 10.235,
+            "wait": 2.0
+          },
+          {
+            "x": -4.081,
+            "y": 8.285,
+            "wait": 2.0
+          },
+          {
+            "x": -4.481,
+            "y": 5.985,
+            "wait": 2.0
+          },
+          {
+            "x": -4.181,
+            "y": 3.685,
+            "wait": 2.0
+          },
+          {
+            "x": -3.181,
+            "y": 1.735,
+            "wait": 2.0
+          },
+          {
+            "x": -1.731,
+            "y": 0.435,
+            "wait": 2.0
+          },
+          {
+            "x": 0.019,
+            "y": -0.015,
+            "wait": 2.0
+          }
+        ]
+      },
+      "endpoint_error_m": 0.04519114908467278,
+      "endpoint_truth_map_xy": [
+        -0.12355036894990556,
+        0.012369650935527325
+      ],
+      "endpoint_estimated_pose": [
+        -0.1641447698885031,
+        0.03222751003537777,
+        -0.26804353418709853
+      ],
+      "estimated_goal_distance_m": 0.18913604744113285,
+      "truth_goal_distance_m": 0.14515407496893365,
+      "actual_speed_mps": 0.0,
+      "actual_turn_rate_rps": 0.0,
+      "collision_count": 0,
+      "shutdown_seconds": 0.9809963500010781,
+      "launch_exit_code": 0,
+      "shutdown_acknowledged": true,
+      "shutdown_events": [
+        [
+          "pause_requested",
+          42903.227921281
+        ],
+        [
+          "pause_acknowledged",
+          42903.612546542
+        ],
+        [
+          "stats_requested",
+          42903.612990751
+        ],
+        [
+          "pause_applied",
+          42903.719891037
+        ],
+        [
+          "SIGINT",
+          42903.719958068
+        ]
+      ]
+    }
+  ],
+  "all_passed": true,
+  "removed_panel_truth_subscriptions": 1,
+  "finished_at_jst": "2026-10-03T00:24:10+09:00"
+}

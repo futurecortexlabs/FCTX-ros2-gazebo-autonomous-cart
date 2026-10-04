@@ -1,0 +1,18 @@
+# 車輪の前後速度とIMUの相対姿勢を融合。絶対位置・Gazebo正解位置は入力しない。
+ekf_filter_node:
+  ros__parameters:
+    use_sim_time: true
+    frequency: 30.0
+    sensor_timeout: 0.15
+    two_d_mode: true
+    publish_tf: true
+    odom_frame: wheel_odom
+    base_link_frame: loop_cart/base_link
+    world_frame: wheel_odom
+    odom0: /loop/wheel_odom
+    odom0_config: [false, false, false, false, false, false, true, true, false, false, false, false, false, false, false]
+    imu0: /loop/imu
+    imu0_config: [false, false, false, false, false, true, false, false, false, false, false, true, false, false, false]
+    imu0_relative: true
+    imu0_differential: false
+    print_diagnostics: true

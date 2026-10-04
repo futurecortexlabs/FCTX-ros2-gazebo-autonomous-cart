@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_sha256": "d32102150f590ed0e7db0649e0f9fd1e9362d5c72608eacd954a56f72d4856f7",
+  "cases": [
+    {
+      "explicit": true,
+      "partition": "isolated_test_partition",
+      "passed": true
+    },
+    {
+      "explicit": false,
+      "partition": "ros2_gazebo_loop",
+      "passed": true
+    }
+  ]
+}

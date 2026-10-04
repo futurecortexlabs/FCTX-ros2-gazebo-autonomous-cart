@@ -1,0 +1,1031 @@
+{
+  "mode": "explore",
+  "expected_courses": [
+    "slalom_course.sdf"
+  ],
+  "minimum_observed_free_fraction": 0.9,
+  "results": [
+    {
+      "course": "slalom_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 1,
+      "areas": {
+        "spawn_connected": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.973452
+        },
+        "all_enclosed_safe": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.973452
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            -10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            -9,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -1.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -9,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -1.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "stations_visited": [
+        {
+          "station": {
+            "world_xy": [
+              -10,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              0.0
+            ]
+          },
+          "observed_goals": [],
+          "external_evaluation": {
+            "estimated_pose": [
+              6.973588373363718e-16,
+              1.8041124149518038e-15,
+              0.34091676572632573
+            ],
+            "truth_map_xy": [
+              3.668176873355394e-12,
+              1.2505552149557378e-12
+            ],
+            "position_error_m": 3.8742464177574504e-12,
+            "yaw_error_rad": 3.0324703859108126e-10
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -9,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -1.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -1.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.849512170440377,
+              -0.9846921122490317,
+              -0.10137280227038736
+            ],
+            "truth_map_xy": [
+              9.848333789114445,
+              -0.9865654751901913
+            ],
+            "position_error_m": 0.0022131586609675097,
+            "yaw_error_rad": 7.882583474838611e-15
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -3,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -7.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -7.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.996602410031773,
+              -6.844081721744949,
+              -1.5490086658120987
+            ],
+            "truth_map_xy": [
+              9.994872701869767,
+              -6.843882168310291
+            ],
+            "position_error_m": 0.0017411811792561178,
+            "yaw_error_rad": 7.327471962526033e-15
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -3,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              -7.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              -7.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.15864688740620025,
+              -6.997660032878489,
+              -3.1268439204953706
+            ],
+            "truth_map_xy": [
+              0.15882564242442174,
+              -7.00632181039399
+            ],
+            "position_error_m": 0.008663621822573762,
+            "yaw_error_rad": 8.615330671091215e-14
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              3,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              -13.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              -13.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.0036085186588277803,
+              -12.844663331844176,
+              -1.5940227276371508
+            ],
+            "truth_map_xy": [
+              0.0047944551455428655,
+              -12.851435779892986
+            ],
+            "position_error_m": 0.006875499830874569,
+            "yaw_error_rad": 9.325873406851315e-14
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              3,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -13.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -13.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.848072582344631,
+              -12.99777968169214,
+              -0.014613578154591036
+            ],
+            "truth_map_xy": [
+              9.847243912363048,
+              -13.014129559363962
+            ],
+            "position_error_m": 0.01637086417456027,
+            "yaw_error_rad": 9.219014440731144e-14
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              10,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -20.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -20.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.997003869513923,
+              -19.848389798494942,
+              -1.5510365556421521
+            ],
+            "truth_map_xy": [
+              10.000604720833051,
+              -19.859655266124363
+            ],
+            "position_error_m": 0.011826956122857732,
+            "yaw_error_rad": 8.948397578478762e-14
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              10,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              -20.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              -20.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.1621172013603207,
+              -19.997765716280963,
+              -3.127811348045782
+            ],
+            "truth_map_xy": [
+              0.16796124304469218,
+              -20.012495079262905
+            ],
+            "position_error_m": 0.01584635469319309,
+            "yaw_error_rad": 1.687538997430238e-13
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              10,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -20.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -20.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.841103902304392,
+              -20.000261850850293,
+              0.0017366382977855317
+            ],
+            "truth_map_xy": [
+              9.846213328703366,
+              -20.014643090068343
+            ],
+            "position_error_m": 0.015261922538570019,
+            "yaw_error_rad": 1.935513275580438e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              3,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -13.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -13.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.9968759007243,
+              -13.156993607041121,
+              1.5508997008083099
+            ],
+            "truth_map_xy": [
+              10.000731594687926,
+              -13.176984542898692
+            ],
+            "position_error_m": 0.020359368664147143,
+            "yaw_error_rad": 1.9355132755638497e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              3,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              -13.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              -13.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.15880800658384323,
+              -13.002492098534717,
+              3.125901626278292
+            ],
+            "truth_map_xy": [
+              0.16474065578449856,
+              -13.016292693914089
+            ],
+            "position_error_m": 0.015021742887001761,
+            "yaw_error_rad": 1.9355132743004838e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -3,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              -7.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              -7.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.003679034879488883,
+              -7.154744724586311,
+              1.5945669747962368
+            ],
+            "truth_map_xy": [
+              0.004621133267343593,
+              -7.166879767671377
+            ],
+            "position_error_m": 0.012171557831633787,
+            "yaw_error_rad": 1.935513274122848e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -3,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -7.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -7.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.840452119323084,
+              -7.002749785392578,
+              0.01709505459023726
+            ],
+            "truth_map_xy": [
+              9.836660104231557,
+              -7.009080580843094
+            ],
+            "position_error_m": 0.007379590062505813,
+            "yaw_error_rad": 1.9355132741469275e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -9,
+              5
+            ],
+            "map_xy": [
+              10.0,
+              -1.0
+            ]
+          },
+          "observed_goals": [
+            [
+              10.0,
+              -1.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              9.996116283173551,
+              -1.1558517729023075,
+              1.5458834627579696
+            ],
+            "truth_map_xy": [
+              9.994085734461821,
+              -1.1610036567958115
+            ],
+            "position_error_m": 0.005537601983065798,
+            "yaw_error_rad": 1.9355132740983553e-05
+          }
+        },
+        {
+          "station": {
+            "world_xy": [
+              -10,
+              -5
+            ],
+            "map_xy": [
+              0.0,
+              0.0
+            ]
+          },
+          "observed_goals": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "external_evaluation": {
+            "estimated_pose": [
+              0.15156743599056502,
+              -0.017317971488097144,
+              3.0278271161896653
+            ],
+            "truth_map_xy": [
+              0.15468916623395604,
+              -0.018917004021051287
+            ],
+            "position_error_m": 0.0035074356378910067,
+            "yaw_error_rad": 1.9355132734123053e-05
+          }
+        }
+      ],
+      "collision_count": 0,
+      "map_path": "maps/slalom_course/map.yaml",
+      "pose_source": "slam",
+      "ground_truth_used_for_control": false,
+      "external_endpoint_evaluation": {
+        "estimated_pose": [
+          0.1515660287136052,
+          -0.01731781072072984,
+          3.0278271161896653
+        ],
+        "truth_map_xy": [
+          0.15468916623395604,
+          -0.018917004021051287
+        ],
+        "position_error_m": 0.0035087614884480563,
+        "yaw_error_rad": 1.9355132734123053e-05
+      },
+      "mapping_speed_mps": 0.3,
+      "reached_all_stations": true,
+      "max_station_position_error_m": 0.020359368664147143,
+      "max_station_yaw_error_rad": 1.935513275580438e-05,
+      "slam_parameters": {
+        "angle_variance_penalty": 0.0025,
+        "base_frame": "loop_cart/base_link",
+        "ceres_dogleg_type": "TRADITIONAL_DOGLEG",
+        "ceres_linear_solver": "SPARSE_NORMAL_CHOLESKY",
+        "ceres_loss_function": "None",
+        "ceres_preconditioner": "SCHUR_JACOBI",
+        "ceres_trust_strategy": "LEVENBERG_MARQUARDT",
+        "check_min_dist_and_heading_precisely": true,
+        "coarse_angle_resolution": 0.0349,
+        "coarse_search_angle_offset": 0.349,
+        "correlation_search_space_dimension": 0.5,
+        "correlation_search_space_resolution": 0.01,
+        "correlation_search_space_smear_deviation": 0.1,
+        "debug_logging": false,
+        "distance_variance_penalty": 0.5,
+        "do_loop_closing": true,
+        "enable_interactive_mode": false,
+        "fine_search_angle_offset": 0.00349,
+        "link_match_minimum_response_fine": 0.1,
+        "link_scan_maximum_distance": 1.5,
+        "loop_match_maximum_variance_coarse": 3.0,
+        "loop_match_minimum_chain_size": 10,
+        "loop_match_minimum_response_coarse": 0.35,
+        "loop_match_minimum_response_fine": 0.45,
+        "loop_search_maximum_distance": 0.75,
+        "loop_search_space_dimension": 1.0,
+        "loop_search_space_resolution": 0.05,
+        "loop_search_space_smear_deviation": 0.03,
+        "map_frame": "map",
+        "map_update_interval": 1.0,
+        "max_laser_range": 35.0,
+        "min_laser_range": 0.0,
+        "min_pass_through": 1,
+        "minimum_angle_penalty": 0.2,
+        "minimum_distance_penalty": 0.5,
+        "minimum_time_interval": 0.1,
+        "minimum_travel_distance": 0.02,
+        "minimum_travel_heading": 0.02,
+        "mode": "mapping",
+        "occupancy_threshold": 0.1,
+        "odom_frame": "wheel_odom",
+        "resolution": 0.05,
+        "restamp_tf": true,
+        "scan_buffer_maximum_scan_distance": 10.0,
+        "scan_buffer_size": 10,
+        "scan_topic": "/loop/scan",
+        "solver_plugin": "solver_plugins::CeresSolver",
+        "stack_size_to_use": 40000000,
+        "tf_buffer_duration": 30.0,
+        "throttle_scans": 1,
+        "transform_publish_period": 0.02,
+        "transform_timeout": 0.2,
+        "use_map_saver": true,
+        "use_response_expansion": true,
+        "use_scan_barycenter": true,
+        "use_scan_matching": true,
+        "use_sim_time": true
+      },
+      "slam_parameters_sha256": "5997d3d709ddf5e22014d07258f793c7554f5214f855e2000413a1195976fe12",
+      "source_fingerprints": {
+        "config/slam.yaml": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+        "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+        "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+        "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+        "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+        "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5"
+      },
+      "route_path": "routes/slalom_course_coverage_delivery.json",
+      "final_map_route_validation": [
+        {
+          "reference_station": [
+            10.0,
+            -1.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -0.982
+          ],
+          "displacement_m": 0.020591260281975356,
+          "path_points": 2,
+          "clearance_m": 2.2945
+        },
+        {
+          "reference_station": [
+            10.0,
+            -7.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -6.982
+          ],
+          "displacement_m": 0.020591260281973802,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            0.0,
+            -7.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            -6.982
+          ],
+          "displacement_m": 0.020591260281973157,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            0.0,
+            -13.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            -12.982
+          ],
+          "displacement_m": 0.020591260281973157,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -13.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -12.982
+          ],
+          "displacement_m": 0.020591260281973802,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -20.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -19.982
+          ],
+          "displacement_m": 0.02059126028197225,
+          "path_points": 2,
+          "clearance_m": 1.2445000000000002
+        },
+        {
+          "reference_station": [
+            0.0,
+            -20.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            -19.982
+          ],
+          "displacement_m": 0.020591260281971602,
+          "path_points": 2,
+          "clearance_m": 1.2445000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -20.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -19.982
+          ],
+          "displacement_m": 0.02059126028197225,
+          "path_points": 2,
+          "clearance_m": 1.2445000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -13.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -12.982
+          ],
+          "displacement_m": 0.020591260281973802,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            0.0,
+            -13.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            -12.982
+          ],
+          "displacement_m": 0.020591260281973157,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            0.0,
+            -7.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            -6.982
+          ],
+          "displacement_m": 0.020591260281973157,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -7.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -6.982
+          ],
+          "displacement_m": 0.020591260281973802,
+          "path_points": 2,
+          "clearance_m": 1.9945000000000002
+        },
+        {
+          "reference_station": [
+            10.0,
+            -1.0
+          ],
+          "saved_map_goal": [
+            10.01,
+            -0.982
+          ],
+          "displacement_m": 0.020591260281975356,
+          "path_points": 2,
+          "clearance_m": 2.2945
+        },
+        {
+          "reference_station": [
+            0.0,
+            0.0
+          ],
+          "saved_map_goal": [
+            0.01,
+            0.018
+          ],
+          "displacement_m": 0.020591260281974708,
+          "path_points": 2,
+          "clearance_m": 1.2945
+        }
+      ],
+      "passed": true,
+      "shutdown": {
+        "completed": true,
+        "elapsed_s": 3.2030282050036476,
+        "launch_exit_code": 0,
+        "shutdown_events": [
+          [
+            "pause_requested",
+            50235.333040654
+          ],
+          [
+            "pause_acknowledged",
+            50235.643098077
+          ],
+          [
+            "stats_requested",
+            50235.643448247
+          ],
+          [
+            "pause_applied",
+            50235.833946722
+          ],
+          [
+            "slam_deactivate_requested",
+            50235.834278572
+          ],
+          [
+            "slam_deactivate_acknowledged",
+            50237.119540874
+          ],
+          [
+            "SIGINT",
+            50237.119562816
+          ]
+        ],
+        "forced": false,
+        "native_or_shutdown_errors": [],
+        "terminal_cleanup_errors": [],
+        "remaining_owned_process_count": 0,
+        "passed": true
+      },
+      "artifact_manifest": {
+        "course": "slalom_course.sdf",
+        "world_sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790962794.84921,
+        "files": [
+          {
+            "path": "worlds/slalom_course.sdf",
+            "sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3"
+          },
+          {
+            "path": "maps/slalom_course/map.yaml",
+            "sha256": "7161be8510d55366d1f7d9c984f261284f09c978558cb4b815cef83111a89105"
+          },
+          {
+            "path": "maps/slalom_course/map.pgm",
+            "sha256": "9cec17c3b1bf62c16ca5be0a467f1d2a6595f549ab9e0e09f09bdc9c1394ea41"
+          },
+          {
+            "path": "maps/slalom_course/map_metadata.json",
+            "sha256": "d1b0fd1263a203902277607b6f6c0e7afcc54874906d3ef054d8195262619b7d"
+          },
+          {
+            "path": "routes/slalom_course_coverage_delivery.json",
+            "sha256": "6022dce2363330f31688ba021ab57459faae0901c31ced12499b91559d85f7f4"
+          }
+        ]
+      }
+    }
+  ],
+  "cleanup": {
+    "completed": true,
+    "elapsed_s": 3.2030282050036476,
+    "launch_exit_code": 0,
+    "shutdown_events": [
+      [
+        "pause_requested",
+        50235.333040654
+      ],
+      [
+        "pause_acknowledged",
+        50235.643098077
+      ],
+      [
+        "stats_requested",
+        50235.643448247
+      ],
+      [
+        "pause_applied",
+        50235.833946722
+      ],
+      [
+        "slam_deactivate_requested",
+        50235.834278572
+      ],
+      [
+        "slam_deactivate_acknowledged",
+        50237.119540874
+      ],
+      [
+        "SIGINT",
+        50237.119562816
+      ]
+    ],
+    "forced": false,
+    "native_or_shutdown_errors": [],
+    "terminal_cleanup_errors": [],
+    "remaining_owned_process_count": 0,
+    "passed": true
+  },
+  "all_passed": true
+}

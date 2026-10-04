@@ -1,0 +1,803 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-03T02:50:07.752340+09:00",
+  "all_passed": true,
+  "scope": "Final common-configuration full-course SLAM exploration and return in isolated simulator copies. Ground truth was external evaluation and GUI speed display only. Generated maps/routes stayed in copies; shipping AMCL maps/routes were retained.",
+  "expected_courses": [
+    "loop_course.sdf",
+    "oval_course.sdf",
+    "large_oval_course.sdf",
+    "obstacle_course.sdf",
+    "warehouse_course.sdf",
+    "large_warehouse_course.sdf",
+    "slalom_course.sdf"
+  ],
+  "total_stations": 105,
+  "collision_count": 0,
+  "max_station_error_m": 0.12665553602583124,
+  "max_return_error_m": 0.01946829450282325,
+  "minimum_observed_free_fraction": 0.9,
+  "observed_free_denominator": "External reference 0.1m samples in spawn-connected region, with robot radius 0.62m and margin 0.28m; not every enclosed disconnected area.",
+  "mapping_speed_mps": 0.3,
+  "common_slam_config_sha256": "4bb214cda21b41115c4e7bf3ebfda6b5c10f0f7af2c4c16d83e271a9eb857380",
+  "common_slam_parameters": {
+    "angle_variance_penalty": 0.0025,
+    "base_frame": "loop_cart/base_link",
+    "ceres_dogleg_type": "TRADITIONAL_DOGLEG",
+    "ceres_linear_solver": "SPARSE_NORMAL_CHOLESKY",
+    "ceres_loss_function": "None",
+    "ceres_preconditioner": "SCHUR_JACOBI",
+    "ceres_trust_strategy": "LEVENBERG_MARQUARDT",
+    "check_min_dist_and_heading_precisely": true,
+    "coarse_angle_resolution": 0.0349,
+    "coarse_search_angle_offset": 0.349,
+    "correlation_search_space_dimension": 0.5,
+    "correlation_search_space_resolution": 0.01,
+    "correlation_search_space_smear_deviation": 0.1,
+    "debug_logging": false,
+    "distance_variance_penalty": 0.5,
+    "do_loop_closing": true,
+    "enable_interactive_mode": false,
+    "fine_search_angle_offset": 0.00349,
+    "link_match_minimum_response_fine": 0.1,
+    "link_scan_maximum_distance": 1.5,
+    "loop_match_maximum_variance_coarse": 3.0,
+    "loop_match_minimum_chain_size": 10,
+    "loop_match_minimum_response_coarse": 0.35,
+    "loop_match_minimum_response_fine": 0.45,
+    "loop_search_maximum_distance": 0.75,
+    "loop_search_space_dimension": 1.0,
+    "loop_search_space_resolution": 0.05,
+    "loop_search_space_smear_deviation": 0.03,
+    "map_frame": "map",
+    "map_update_interval": 1.0,
+    "max_laser_range": 35.0,
+    "min_laser_range": 0.0,
+    "min_pass_through": 1,
+    "minimum_angle_penalty": 0.2,
+    "minimum_distance_penalty": 0.5,
+    "minimum_time_interval": 0.1,
+    "minimum_travel_distance": 0.02,
+    "minimum_travel_heading": 0.02,
+    "mode": "mapping",
+    "occupancy_threshold": 0.1,
+    "odom_frame": "wheel_odom",
+    "resolution": 0.05,
+    "restamp_tf": true,
+    "scan_buffer_maximum_scan_distance": 10.0,
+    "scan_buffer_size": 10,
+    "scan_topic": "/loop/scan",
+    "solver_plugin": "solver_plugins::CeresSolver",
+    "stack_size_to_use": 40000000,
+    "tf_buffer_duration": 30.0,
+    "throttle_scans": 1,
+    "transform_publish_period": 0.02,
+    "transform_timeout": 0.2,
+    "use_map_saver": true,
+    "use_response_expansion": true,
+    "use_scan_barycenter": true,
+    "use_scan_matching": true,
+    "use_sim_time": true
+  },
+  "product_source_matches_current_canonical": true,
+  "source_audits": [
+    "final_slam_three_source_process_audit.json",
+    "final_slam_four_source_process_audit.json"
+  ],
+  "source_differences_limited_to_four_validation_files": [
+    "scripts/test_validation_processes.py",
+    "scripts/validate_endurance.py",
+    "scripts/validate_map_coverage.py",
+    "scripts/validate_saved_routes.py"
+  ],
+  "tested_map_validator_sha256": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5",
+  "final_map_validator_sha256": "d20d3b07c062206ab3f0a70706b794df51c57c61c3b2285564f9aa2bb074b6d8",
+  "map_validator_cleanup_difference": "Final validator adds post-snapshot newborn same-PGID checks. The full runs retained older fixed validator; independent native logs and final all-PGID/copy/domain inventory supplement it. Product control/GUI/bridge/configuration are identical.",
+  "final_static_record": "final_release_validation.json",
+  "final_static_sha256": "5cfb86d717abf35a9a1d123fce823719c6d62c86d78dc9785e2d18b67eed0dbf",
+  "shipping_artifacts_unchanged": true,
+  "generated_artifacts_are_copy_only": true,
+  "validator_observer_exit_codes_unknown_courses": [
+    "loop_course.sdf",
+    "large_warehouse_course.sdf"
+  ],
+  "limitations": [
+    "Circle and LargeWarehouse validator/observer OS wait statuses were not retained; the measured native launch exit 0, all eight native clean exits, terminal all_passed and zero owned groups are recorded instead.",
+    "Clean source installation was checked in the same installed WSL environment, not on an independent machine.",
+    "GT maxima here describe recorded inspection stations and final return, not every instantaneous driving pose.",
+    "Read-only runtime observers sampled about once per second and do not establish every subsecond event.",
+    "Obstacle had one sampled waiting_for_fresh_data safety state and then recovered to slowing with fresh scan/pose/localized odometry. Raw control commands were not recorded in that sample, so its cause is not inferred.",
+    "The four-course simulator copy omitted four unused tests/reference resources; all listed runtime sources and the supplementary font configuration were independently matched. The final static/fresh-copy test includes the complete release source."
+  ],
+  "results": [
+    {
+      "course": "loop_course.sdf",
+      "passed": true,
+      "visited_stations": 17,
+      "expected_stations": 17,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.883871,
+      "max_station_error_m": 0.03017905492892471,
+      "return_error_m": 0.010812313706672669,
+      "route_points": 16,
+      "minimum_route_goal_clearance_m": 0.4365164833920778,
+      "maximum_route_goal_displacement_m": 0.09270091693181921,
+      "shutdown_seconds": 2.8833184290051577,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "validator_exit_code": null,
+      "observer_exit_code": null,
+      "os_exit_code_limitations": "The short-lived inline parent exited before collecting child OS wait status. Native launch exit 0, all 8 native clean exits, terminal all_passed, and zero owned groups were measured; validator/observer OS exit codes were not recorded.",
+      "os_exit_witness": null,
+      "native_audit": {
+        "course": "loop_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true
+      },
+      "raw_validation_record": "final_slam_circle_validation.json",
+      "raw_validation_sha256": "b15ad561c4fcc5e0fb8c7ad737ac4a35273f5dce65a85c2e36d0552e42a28c54",
+      "artifact_manifest": {
+        "course": "loop_course.sdf",
+        "world_sha256": "8eb5962a5fa114c075fa14265f87044fb5872539d0eb176656129e38200e5202",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790961560.5172176,
+        "files": [
+          {
+            "path": "worlds/loop_course.sdf",
+            "sha256": "8eb5962a5fa114c075fa14265f87044fb5872539d0eb176656129e38200e5202"
+          },
+          {
+            "path": "maps/loop_course/map.yaml",
+            "sha256": "d85683b40f9f68d187aabe83208517ac22edcff9a1adb1d98127feb1389e4335"
+          },
+          {
+            "path": "maps/loop_course/map.pgm",
+            "sha256": "5d3b833976913b646219d681d9659a5d3238e40b4cb6aaa83999df1b5352dbfd"
+          },
+          {
+            "path": "maps/loop_course/map_metadata.json",
+            "sha256": "f1613cdb0af2aabe6289b7bd68da85ffbebe0597f59cb0045b12ddd1df058bcc"
+          },
+          {
+            "path": "routes/loop_course_coverage_delivery.json",
+            "sha256": "547c7bbad49e069a919431963f44f546d011553073e779c8ca50a91477a10f09"
+          }
+        ]
+      },
+      "performance": {
+        "observer_sha256": "82213b8e841f193281f9e5c8357b80c19f84a519e229d09223a57e4a5ac26d15",
+        "total_samples": 183,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 114,
+        "moving_samples": 100,
+        "native_stats_delta_rtf": {
+          "count": 113,
+          "median": 0.9999994513892114,
+          "minimum": 0.8942702061179486,
+          "maximum": 1.0005035437830592
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 0.11257253100484377,
+          "scan": 0.052274922003562097,
+          "imu": 0.010910411001532339,
+          "wheel_odom": 0.02126444700115826,
+          "localized_odom": 0.04963468499772716
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 14,
+          "mode_switch_stop": 1,
+          "slowing": 11,
+          "driving": 88
+        },
+        "system_cpu_percent": {
+          "count": 114,
+          "median": 33.6,
+          "minimum": 17.3,
+          "maximum": 47.3
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 114,
+          "median": 35.0,
+          "minimum": 10.0,
+          "maximum": 103.1
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 114,
+          "median": 291.0,
+          "minimum": 242.0,
+          "maximum": 454.5
+        },
+        "slam_memory_rss_mb": {
+          "count": 114,
+          "median": 134.650390625,
+          "minimum": 111.87890625,
+          "maximum": 160.52734375
+        }
+      }
+    },
+    {
+      "course": "oval_course.sdf",
+      "passed": true,
+      "visited_stations": 17,
+      "expected_stations": 17,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.875269,
+      "max_station_error_m": 0.050715436197882074,
+      "return_error_m": 0.012580862535910557,
+      "route_points": 16,
+      "minimum_route_goal_clearance_m": 0.4215329614269008,
+      "maximum_route_goal_displacement_m": 0.05624464418946961,
+      "shutdown_seconds": 2.985914942000818,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "native_audit": {
+        "course": "oval_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true,
+        "missing_clean_exit": []
+      },
+      "active_moving_samples": 143,
+      "native_delta_rtf_median": 0.9999999127631087,
+      "native_delta_rtf_min": 0.6840963468956855,
+      "bridge_stale_samples": 0,
+      "artifact_manifest": {
+        "course": "oval_course.sdf",
+        "world_sha256": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790961236.7562172,
+        "files": [
+          {
+            "path": "worlds/oval_course.sdf",
+            "sha256": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b"
+          },
+          {
+            "path": "maps/oval_course/map.yaml",
+            "sha256": "665810a24bc18703a4ff28d3b2244df92766e4d0703046011f2d36457c87db03"
+          },
+          {
+            "path": "maps/oval_course/map.pgm",
+            "sha256": "3bc3adb334d387528f7379f116dcd0da4740d239a2e4a0d97da5546d5b649c02"
+          },
+          {
+            "path": "maps/oval_course/map_metadata.json",
+            "sha256": "8da4fcfb956e6c9e15a9bcd6310a21e30a9dd74503185db2cae149dfea745b1b"
+          },
+          {
+            "path": "routes/oval_course_coverage_delivery.json",
+            "sha256": "030e32111edfb2d4a2891afa1264ff6e3bcbebea481c4fd23a429ea1327d26aa"
+          }
+        ]
+      },
+      "validator_exit_code": 0,
+      "observer_exit_code": 0,
+      "os_exit_code_limitations": null,
+      "os_exit_witness": {
+        "exit_code": 0,
+        "elapsed_s": 752.0626182556152,
+        "finished_at": "2026-10-03T02:22:57.364929+09:00",
+        "observer_exit_code": 0,
+        "observer_forced": false,
+        "remaining_copy_processes": [],
+        "ros_domain_id": 78,
+        "gz_partition": "isolated_test_partition"
+      },
+      "raw_validation_record": "final_slam_three_validation.json",
+      "raw_validation_sha256": "384b33158829bc0ccddc48f4f7957d39fde9b3c660501f8cd87f125970502ca8"
+    },
+    {
+      "course": "large_oval_course.sdf",
+      "passed": true,
+      "visited_stations": 17,
+      "expected_stations": 17,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.939938,
+      "max_station_error_m": 0.08488803121396139,
+      "return_error_m": 0.01111479151091676,
+      "route_points": 16,
+      "minimum_route_goal_clearance_m": 0.825209289496085,
+      "maximum_route_goal_displacement_m": 0.026660270066148857,
+      "shutdown_seconds": 4.450764090994198,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "native_audit": {
+        "course": "large_oval_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true,
+        "missing_clean_exit": []
+      },
+      "active_moving_samples": 197,
+      "native_delta_rtf_median": 0.9999992782183358,
+      "native_delta_rtf_min": 0.9021602714081002,
+      "bridge_stale_samples": 0,
+      "artifact_manifest": {
+        "course": "large_oval_course.sdf",
+        "world_sha256": "643d41775fd4f0e9698e67fe88767364aa6fdff743be517c96e5600a655b8a94",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790961513.7230592,
+        "files": [
+          {
+            "path": "worlds/large_oval_course.sdf",
+            "sha256": "643d41775fd4f0e9698e67fe88767364aa6fdff743be517c96e5600a655b8a94"
+          },
+          {
+            "path": "maps/large_oval_course/map.yaml",
+            "sha256": "c47a26b29f8864d67ea4f2153b169ae53d84bc2337f3fa4dbd88ccfbe54c2eb9"
+          },
+          {
+            "path": "maps/large_oval_course/map.pgm",
+            "sha256": "d5639a0c4f891c143416cb2a73d2d834617eae31af6285b650c23ff9d8544c87"
+          },
+          {
+            "path": "maps/large_oval_course/map_metadata.json",
+            "sha256": "d810d61c3e23689406eb571df000a8382c8b4f17c9200e8725cc1b3f30a3a5fe"
+          },
+          {
+            "path": "routes/large_oval_course_coverage_delivery.json",
+            "sha256": "2c2df8264d43d7f3169f7e72425c90915ae4a573190e00e92ea2446353b34e82"
+          }
+        ]
+      },
+      "validator_exit_code": 0,
+      "observer_exit_code": 0,
+      "os_exit_code_limitations": null,
+      "os_exit_witness": {
+        "exit_code": 0,
+        "elapsed_s": 752.0626182556152,
+        "finished_at": "2026-10-03T02:22:57.364929+09:00",
+        "observer_exit_code": 0,
+        "observer_forced": false,
+        "remaining_copy_processes": [],
+        "ros_domain_id": 78,
+        "gz_partition": "isolated_test_partition"
+      },
+      "raw_validation_record": "final_slam_three_validation.json",
+      "raw_validation_sha256": "384b33158829bc0ccddc48f4f7957d39fde9b3c660501f8cd87f125970502ca8"
+    },
+    {
+      "course": "obstacle_course.sdf",
+      "passed": true,
+      "visited_stations": 17,
+      "expected_stations": 17,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.862986,
+      "max_station_error_m": 0.024649214332987886,
+      "return_error_m": 0.009550707618726588,
+      "route_points": 16,
+      "minimum_route_goal_clearance_m": 0.4215329614269008,
+      "maximum_route_goal_displacement_m": 0.08885763895130258,
+      "shutdown_seconds": 4.9927852760010865,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "validator_exit_code": 0,
+      "observer_exit_code": 0,
+      "os_exit_code_limitations": null,
+      "os_exit_witness": {
+        "validator": {
+          "exit_code": 0,
+          "status": "actual_parent_Popen_wait"
+        },
+        "observer": {
+          "exit_code": 0,
+          "status": "actual_parent_Popen_wait"
+        },
+        "observer_forced": false,
+        "completed_time": 1790963041.8932657
+      },
+      "native_audit": {
+        "course": "obstacle_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true
+      },
+      "raw_validation_record": "final_slam_obstacle_validation.json",
+      "raw_validation_sha256": "9f0d5c076ca2d0b5859970e0289dd30aa935ef07ae33505bcd77393f3d140122",
+      "artifact_manifest": {
+        "course": "obstacle_course.sdf",
+        "world_sha256": "11e790adaf12de68e54e93c240e4a6e1e8d29b9345ae6f71d3868f953ec2f167",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790963036.282269,
+        "files": [
+          {
+            "path": "worlds/obstacle_course.sdf",
+            "sha256": "11e790adaf12de68e54e93c240e4a6e1e8d29b9345ae6f71d3868f953ec2f167"
+          },
+          {
+            "path": "maps/obstacle_course/map.yaml",
+            "sha256": "9492c260ee485a595be9da3b89909a16ec14dc7836879217c16b5fa349645465"
+          },
+          {
+            "path": "maps/obstacle_course/map.pgm",
+            "sha256": "61f7e1ebb030cd603e9220f90cfe8f466e143bbeb8f2175a98e3216a289c366a"
+          },
+          {
+            "path": "maps/obstacle_course/map_metadata.json",
+            "sha256": "9c80839d226dc2835962c9a09ad55d85c90d65c6d513bb52e29a120d54850a43"
+          },
+          {
+            "path": "routes/obstacle_course_coverage_delivery.json",
+            "sha256": "d5d42251a43d795021224cd5d9e6cbcb44319f62f2f055cb3250f884ec7d9abd"
+          }
+        ]
+      },
+      "performance": {
+        "observer_sha256": "badce2d985ccc1aee7c13997e141db78daf30058de5f25cf5b609ac75a58d334",
+        "total_samples": 207,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 137,
+        "moving_samples": 122,
+        "native_stats_delta_rtf": {
+          "count": 135,
+          "median": 0.9999993346539233,
+          "minimum": 0.8743870669467781,
+          "maximum": 1.0080007363794918
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.629121400997974,
+          "scan": 0.05357832199661061,
+          "imu": 0.02170502299850341,
+          "wheel_odom": 0.03198539900040487,
+          "localized_odom": 0.06185099399590399
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "slowing": 55,
+          "mode_switch_stop": 3,
+          "stopped": 8,
+          "driving": 70,
+          "waiting_for_fresh_data": 1
+        },
+        "system_cpu_percent": {
+          "count": 137,
+          "median": 18.2,
+          "minimum": 4.9,
+          "maximum": 55.9
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 137,
+          "median": 33.0,
+          "minimum": 8.0,
+          "maximum": 119.7
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 137,
+          "median": 254.0,
+          "minimum": 206.0,
+          "maximum": 486.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 137,
+          "median": 136.3203125,
+          "minimum": 111.87109375,
+          "maximum": 161.140625
+        }
+      }
+    },
+    {
+      "course": "warehouse_course.sdf",
+      "passed": true,
+      "visited_stations": 13,
+      "expected_stations": 13,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.938469,
+      "max_station_error_m": 0.016283425608792812,
+      "return_error_m": 0.006736079963841734,
+      "route_points": 12,
+      "minimum_route_goal_clearance_m": 0.8445,
+      "maximum_route_goal_displacement_m": 0.015524174696260573,
+      "shutdown_seconds": 4.106310041002871,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "native_audit": {
+        "course": "warehouse_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true,
+        "missing_clean_exit": []
+      },
+      "active_moving_samples": 181,
+      "native_delta_rtf_median": 0.9999992630939163,
+      "native_delta_rtf_min": 0.9021828607375206,
+      "bridge_stale_samples": 0,
+      "artifact_manifest": {
+        "course": "warehouse_course.sdf",
+        "world_sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790961772.748316,
+        "files": [
+          {
+            "path": "worlds/warehouse_course.sdf",
+            "sha256": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c"
+          },
+          {
+            "path": "maps/warehouse_course/map.yaml",
+            "sha256": "a64b342ead887b71c8e4c133fb9cbb823d4fe791b16710e1bc1332340e5da24f"
+          },
+          {
+            "path": "maps/warehouse_course/map.pgm",
+            "sha256": "2091068958f07de02be6958be9dec8ba0e1696fd0cf5a6ce9edf31956a356720"
+          },
+          {
+            "path": "maps/warehouse_course/map_metadata.json",
+            "sha256": "d16ec512c87a4a77b88572ce7480b7b7f2abf842f99e7fef34036761e110b48b"
+          },
+          {
+            "path": "routes/warehouse_course_coverage_delivery.json",
+            "sha256": "76d2ad1678c8342e20ff34b9c563e604b6eed4048bde472af20eff74bfd8b73b"
+          }
+        ]
+      },
+      "validator_exit_code": 0,
+      "observer_exit_code": 0,
+      "os_exit_code_limitations": null,
+      "os_exit_witness": {
+        "exit_code": 0,
+        "elapsed_s": 752.0626182556152,
+        "finished_at": "2026-10-03T02:22:57.364929+09:00",
+        "observer_exit_code": 0,
+        "observer_forced": false,
+        "remaining_copy_processes": [],
+        "ros_domain_id": 78,
+        "gz_partition": "isolated_test_partition"
+      },
+      "raw_validation_record": "final_slam_three_validation.json",
+      "raw_validation_sha256": "384b33158829bc0ccddc48f4f7957d39fde9b3c660501f8cd87f125970502ca8"
+    },
+    {
+      "course": "large_warehouse_course.sdf",
+      "passed": true,
+      "visited_stations": 9,
+      "expected_stations": 9,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.95427,
+      "max_station_error_m": 0.12665553602583124,
+      "return_error_m": 0.01946829450282325,
+      "route_points": 8,
+      "minimum_route_goal_clearance_m": 1.6558848662652441,
+      "maximum_route_goal_displacement_m": 0.014142135623730713,
+      "shutdown_seconds": 3.6025353519944474,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "validator_exit_code": null,
+      "observer_exit_code": null,
+      "os_exit_code_limitations": "The short-lived inline parent exited before collecting child OS wait status. Native launch exit 0, all 8 native clean exits, terminal all_passed, and zero owned groups were measured; validator/observer OS exit codes were not recorded.",
+      "os_exit_witness": null,
+      "native_audit": {
+        "course": "large_warehouse_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true
+      },
+      "raw_validation_record": "final_slam_large_warehouse_validation.json",
+      "raw_validation_sha256": "ede2eae524289c502131c48093f62f32993510d8d8ce683c6e6d7b6f1d5081c4",
+      "artifact_manifest": {
+        "course": "large_warehouse_course.sdf",
+        "world_sha256": "079a017d3ba0d346113818015bf5d8d1e31b93b0f5f4f47bc09ab9a049427f86",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790962154.4737759,
+        "files": [
+          {
+            "path": "worlds/large_warehouse_course.sdf",
+            "sha256": "079a017d3ba0d346113818015bf5d8d1e31b93b0f5f4f47bc09ab9a049427f86"
+          },
+          {
+            "path": "maps/large_warehouse_course/map.yaml",
+            "sha256": "2007e0fc3f849c34229c7361d0cc354092eded144f4c3bdaffbbc548be8f9571"
+          },
+          {
+            "path": "maps/large_warehouse_course/map.pgm",
+            "sha256": "4de1f92cbd6eb3862be888cfa2ea9195b768d746e6e207bc28caedc19b2ad3e6"
+          },
+          {
+            "path": "maps/large_warehouse_course/map_metadata.json",
+            "sha256": "153c35a3b2dad51c30ec983f8415ee5c0c4f0a07d8ce2fee79044057d6e3214e"
+          },
+          {
+            "path": "routes/large_warehouse_course_coverage_delivery.json",
+            "sha256": "1a7bb47ae9ecf60854efb7c7bd4d98b44664f436f12819df7f5ee592c592c478"
+          }
+        ]
+      },
+      "performance": {
+        "observer_sha256": "8f49c4e470a788d30b49bb5c1d497e14f1a383a809680d6839cd53f457efdb15",
+        "total_samples": 462,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 414,
+        "moving_samples": 405,
+        "native_stats_delta_rtf": {
+          "count": 410,
+          "median": 0.9999995415403766,
+          "minimum": 0.5873009180983031,
+          "maximum": 1.0018224623864158
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.684296567000274,
+          "scan": 0.1153449570047087,
+          "imu": 0.09010294900508597,
+          "wheel_odom": 0.08991992400115123,
+          "localized_odom": 0.11942593599815154
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 9,
+          "driving": 405
+        },
+        "system_cpu_percent": {
+          "count": 414,
+          "median": 24.0,
+          "minimum": 6.8,
+          "maximum": 57.7
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 414,
+          "median": 78.0,
+          "minimum": 30.0,
+          "maximum": 137.0
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 414,
+          "median": 300.0,
+          "minimum": 231.0,
+          "maximum": 492.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 414,
+          "median": 193.314453125,
+          "minimum": 114.34765625,
+          "maximum": 261.9609375
+        }
+      }
+    },
+    {
+      "course": "slalom_course.sdf",
+      "passed": true,
+      "visited_stations": 15,
+      "expected_stations": 15,
+      "collision_count": 0,
+      "observed_free_fraction": 1.0,
+      "usable_fraction": 0.973452,
+      "max_station_error_m": 0.020359368664147143,
+      "return_error_m": 0.0035087614884480563,
+      "route_points": 14,
+      "minimum_route_goal_clearance_m": 1.2445000000000002,
+      "maximum_route_goal_displacement_m": 0.020591260281975356,
+      "shutdown_seconds": 3.2030282050036476,
+      "launch_exit_code": 0,
+      "slam_deactivate_acknowledged": true,
+      "forced": false,
+      "remaining_owned_process_count": 0,
+      "validator_exit_code": 0,
+      "observer_exit_code": 0,
+      "os_exit_code_limitations": null,
+      "os_exit_witness": {
+        "validator": {
+          "exit_code": 0,
+          "raw_wait_status": 0,
+          "status": "actual_linux_zombie_exit_status_observed"
+        },
+        "observer": {
+          "exit_code": 0,
+          "raw_wait_status": 0,
+          "status": "actual_linux_zombie_exit_status_observed"
+        }
+      },
+      "native_audit": {
+        "course": "slalom_course.sdf",
+        "native_child_process_count": 8,
+        "native_clean_exit_process_count": 8,
+        "all_eight_clean": true
+      },
+      "raw_validation_record": "final_slam_slalom_validation.json",
+      "raw_validation_sha256": "83ed7bd9a6c4374cd351db5fc159f2805e317491613859e611d549931b3320d6",
+      "artifact_manifest": {
+        "course": "slalom_course.sdf",
+        "world_sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3",
+        "map_source": "slam_toolbox",
+        "map_frame": "map",
+        "saved_at": 1790962794.84921,
+        "files": [
+          {
+            "path": "worlds/slalom_course.sdf",
+            "sha256": "c8de1754335c1428a80689ad28da09dab3d8f5c2f89abed9a83ae570056672d3"
+          },
+          {
+            "path": "maps/slalom_course/map.yaml",
+            "sha256": "7161be8510d55366d1f7d9c984f261284f09c978558cb4b815cef83111a89105"
+          },
+          {
+            "path": "maps/slalom_course/map.pgm",
+            "sha256": "9cec17c3b1bf62c16ca5be0a467f1d2a6595f549ab9e0e09f09bdc9c1394ea41"
+          },
+          {
+            "path": "maps/slalom_course/map_metadata.json",
+            "sha256": "d1b0fd1263a203902277607b6f6c0e7afcc54874906d3ef054d8195262619b7d"
+          },
+          {
+            "path": "routes/slalom_course_coverage_delivery.json",
+            "sha256": "6022dce2363330f31688ba021ab57459faae0901c31ced12499b91559d85f7f4"
+          }
+        ]
+      },
+      "performance": {
+        "observer_sha256": "b218832f206fb19eef96e16a3696cf31a18a8da389865dc824123738dfe6c739",
+        "total_samples": 519,
+        "active_definition": "auto+navigating with current safety topic !=user_stop; moving requires |wheel v|>.02 or |wheel w|>.04",
+        "active_samples": 464,
+        "moving_samples": 449,
+        "native_stats_delta_rtf": {
+          "count": 463,
+          "median": 0.9999996188120055,
+          "minimum": 0.9074952853982243,
+          "maximum": 1.000291718011075
+        },
+        "maximum_moving_new_stamp_age_s": {
+          "correction_pose": 1.631949540002097,
+          "scan": 0.05668252499890514,
+          "imu": 0.011641436998615973,
+          "wheel_odom": 0.02116784700046992,
+          "localized_odom": 0.05004284100141376
+        },
+        "stale_status_samples": 0,
+        "safety_states": {
+          "stopped": 11,
+          "driving": 449,
+          "mode_switch_stop": 4
+        },
+        "system_cpu_percent": {
+          "count": 464,
+          "median": 14.7,
+          "minimum": 5.3,
+          "maximum": 52.1
+        },
+        "slam_cpu_one_core_percent": {
+          "count": 464,
+          "median": 77.95,
+          "minimum": 17.0,
+          "maximum": 146.0
+        },
+        "owned_cpu_one_core_percent": {
+          "count": 464,
+          "median": 310.0,
+          "minimum": 223.0,
+          "maximum": 480.0
+        },
+        "slam_memory_rss_mb": {
+          "count": 464,
+          "median": 200.3203125,
+          "minimum": 111.87109375,
+          "maximum": 267.765625
+        }
+      }
+    }
+  ],
+  "map_agent_final_record": "final_slam_map_finish_four_summary.json",
+  "map_agent_final_record_sha256": "3bc443966d8735871a6caadbb58f593111dd94262a846d0b1db8807f8ff3f6b6",
+  "post_stop_lock_reacquired_four_copy": true
+}

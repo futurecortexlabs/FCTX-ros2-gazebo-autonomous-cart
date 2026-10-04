@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+/logs/
+/backups/
+/tmp/
+/loop_delivery/
+/output/
+/*.png
+/fonts/*.ttc
+/experiments/**/build/

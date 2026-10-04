@@ -1,0 +1,1233 @@
+{
+  "mode": "inspect",
+  "minimum_observed_free_fraction": 0.9,
+  "coverage_definition": "Observed-free SLAM samples / SDF safe samples (radius .62m, margin .28m).",
+  "disconnected_regions": "Reported separately; inner islands cannot be reached from the spawn.",
+  "results": [
+    {
+      "course": "loop_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 2,
+      "areas": {
+        "spawn_connected": {
+          "samples": 2790,
+          "area_m2": 27.9,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.881004
+        },
+        "all_enclosed_safe": {
+          "samples": 4073,
+          "area_m2": 40.73,
+          "observed_free_fraction": 0.684999,
+          "usable_fraction": 0.603486
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            4.5,
+            0.0
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            4.15745789630079,
+            1.722075445642904
+          ],
+          "map_xy": [
+            1.7221,
+            0.3425
+          ]
+        },
+        {
+          "world_xy": [
+            3.1819805153394642,
+            3.181980515339464
+          ],
+          "map_xy": [
+            3.182,
+            1.318
+          ]
+        },
+        {
+          "world_xy": [
+            1.7220754456429042,
+            4.15745789630079
+          ],
+          "map_xy": [
+            4.1575,
+            2.7779
+          ]
+        },
+        {
+          "world_xy": [
+            2.755455298081545e-16,
+            4.5
+          ],
+          "map_xy": [
+            4.5,
+            4.5
+          ]
+        },
+        {
+          "world_xy": [
+            -1.7220754456429037,
+            4.15745789630079
+          ],
+          "map_xy": [
+            4.1575,
+            6.2221
+          ]
+        },
+        {
+          "world_xy": [
+            -3.181980515339464,
+            3.1819805153394642
+          ],
+          "map_xy": [
+            3.182,
+            7.682
+          ]
+        },
+        {
+          "world_xy": [
+            -4.15745789630079,
+            1.7220754456429046
+          ],
+          "map_xy": [
+            1.7221,
+            8.6575
+          ]
+        },
+        {
+          "world_xy": [
+            -4.5,
+            5.51091059616309e-16
+          ],
+          "map_xy": [
+            0.0,
+            9.0
+          ]
+        },
+        {
+          "world_xy": [
+            -4.157457896300791,
+            -1.7220754456429035
+          ],
+          "map_xy": [
+            -1.7221,
+            8.6575
+          ]
+        },
+        {
+          "world_xy": [
+            -3.1819805153394647,
+            -3.181980515339464
+          ],
+          "map_xy": [
+            -3.182,
+            7.682
+          ]
+        },
+        {
+          "world_xy": [
+            -1.7220754456429066,
+            -4.157457896300789
+          ],
+          "map_xy": [
+            -4.1575,
+            6.2221
+          ]
+        },
+        {
+          "world_xy": [
+            -8.266365894244633e-16,
+            -4.5
+          ],
+          "map_xy": [
+            -4.5,
+            4.5
+          ]
+        },
+        {
+          "world_xy": [
+            1.722075445642905,
+            -4.15745789630079
+          ],
+          "map_xy": [
+            -4.1575,
+            2.7779
+          ]
+        },
+        {
+          "world_xy": [
+            3.181980515339463,
+            -3.1819805153394647
+          ],
+          "map_xy": [
+            -3.182,
+            1.318
+          ]
+        },
+        {
+          "world_xy": [
+            4.157457896300789,
+            -1.7220754456429068
+          ],
+          "map_xy": [
+            -1.7221,
+            0.3425
+          ]
+        },
+        {
+          "world_xy": [
+            4.5,
+            -1.102182119232618e-15
+          ],
+          "map_xy": [
+            -0.0,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "obstacle_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 2,
+      "areas": {
+        "spawn_connected": {
+          "samples": 2445,
+          "area_m2": 24.45,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.867485
+        },
+        "all_enclosed_safe": {
+          "samples": 3728,
+          "area_m2": 37.28,
+          "observed_free_fraction": 0.655848,
+          "usable_fraction": 0.568938
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            4.5,
+            0.0
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            4.15745789630079,
+            1.722075445642904
+          ],
+          "map_xy": [
+            1.7221,
+            0.3425
+          ]
+        },
+        {
+          "world_xy": [
+            3.1819805153394642,
+            3.181980515339464
+          ],
+          "map_xy": [
+            3.182,
+            1.318
+          ]
+        },
+        {
+          "world_xy": [
+            1.7192149773682868,
+            4.419214977368277
+          ],
+          "map_xy": [
+            4.4192,
+            2.7808
+          ]
+        },
+        {
+          "world_xy": [
+            2.755455298081545e-16,
+            4.5
+          ],
+          "map_xy": [
+            4.5,
+            4.5
+          ]
+        },
+        {
+          "world_xy": [
+            -1.7220754456429037,
+            4.15745789630079
+          ],
+          "map_xy": [
+            4.1575,
+            6.2221
+          ]
+        },
+        {
+          "world_xy": [
+            -3.181980515339464,
+            3.1819805153394642
+          ],
+          "map_xy": [
+            3.182,
+            7.682
+          ]
+        },
+        {
+          "world_xy": [
+            -4.15745789630079,
+            1.7220754456429046
+          ],
+          "map_xy": [
+            1.7221,
+            8.6575
+          ]
+        },
+        {
+          "world_xy": [
+            -4.280785022631692,
+            0.019214977368292807
+          ],
+          "map_xy": [
+            0.0192,
+            8.7808
+          ]
+        },
+        {
+          "world_xy": [
+            -4.157457896300791,
+            -1.7220754456429035
+          ],
+          "map_xy": [
+            -1.7221,
+            8.6575
+          ]
+        },
+        {
+          "world_xy": [
+            -3.1819805153394647,
+            -3.181980515339464
+          ],
+          "map_xy": [
+            -3.182,
+            7.682
+          ]
+        },
+        {
+          "world_xy": [
+            -1.7220754456429066,
+            -4.157457896300789
+          ],
+          "map_xy": [
+            -4.1575,
+            6.2221
+          ]
+        },
+        {
+          "world_xy": [
+            -8.266365894244633e-16,
+            -4.5
+          ],
+          "map_xy": [
+            -4.5,
+            4.5
+          ]
+        },
+        {
+          "world_xy": [
+            1.919214977368286,
+            -4.380785022631692
+          ],
+          "map_xy": [
+            -4.3808,
+            2.5808
+          ]
+        },
+        {
+          "world_xy": [
+            3.181980515339463,
+            -3.1819805153394647
+          ],
+          "map_xy": [
+            -3.182,
+            1.318
+          ]
+        },
+        {
+          "world_xy": [
+            4.157457896300789,
+            -1.7220754456429068
+          ],
+          "map_xy": [
+            -1.7221,
+            0.3425
+          ]
+        },
+        {
+          "world_xy": [
+            4.5,
+            -1.102182119232618e-15
+          ],
+          "map_xy": [
+            -0.0,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "oval_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 2,
+      "areas": {
+        "spawn_connected": {
+          "samples": 3247,
+          "area_m2": 32.47,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.876809
+        },
+        "all_enclosed_safe": {
+          "samples": 5459,
+          "area_m2": 54.59,
+          "observed_free_fraction": 0.594798,
+          "usable_fraction": 0.521524
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            6.0,
+            0.0
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            5.54327719506772,
+            1.722075445642904
+          ],
+          "map_xy": [
+            1.7221,
+            0.4567
+          ]
+        },
+        {
+          "world_xy": [
+            4.242640687119286,
+            3.181980515339464
+          ],
+          "map_xy": [
+            3.182,
+            1.7574
+          ]
+        },
+        {
+          "world_xy": [
+            2.296100594190539,
+            4.15745789630079
+          ],
+          "map_xy": [
+            4.1575,
+            3.7039
+          ]
+        },
+        {
+          "world_xy": [
+            3.6739403974420594e-16,
+            4.5
+          ],
+          "map_xy": [
+            4.5,
+            6.0
+          ]
+        },
+        {
+          "world_xy": [
+            -2.2961005941905386,
+            4.15745789630079
+          ],
+          "map_xy": [
+            4.1575,
+            8.2961
+          ]
+        },
+        {
+          "world_xy": [
+            -4.242640687119285,
+            3.1819805153394642
+          ],
+          "map_xy": [
+            3.182,
+            10.2426
+          ]
+        },
+        {
+          "world_xy": [
+            -5.54327719506772,
+            1.7220754456429046
+          ],
+          "map_xy": [
+            1.7221,
+            11.5433
+          ]
+        },
+        {
+          "world_xy": [
+            -6.0,
+            5.51091059616309e-16
+          ],
+          "map_xy": [
+            -0.0,
+            12.0
+          ]
+        },
+        {
+          "world_xy": [
+            -5.543277195067721,
+            -1.7220754456429035
+          ],
+          "map_xy": [
+            -1.7221,
+            11.5433
+          ]
+        },
+        {
+          "world_xy": [
+            -4.242640687119286,
+            -3.181980515339464
+          ],
+          "map_xy": [
+            -3.182,
+            10.2426
+          ]
+        },
+        {
+          "world_xy": [
+            -2.296100594190542,
+            -4.157457896300789
+          ],
+          "map_xy": [
+            -4.1575,
+            8.2961
+          ]
+        },
+        {
+          "world_xy": [
+            -1.102182119232618e-15,
+            -4.5
+          ],
+          "map_xy": [
+            -4.5,
+            6.0
+          ]
+        },
+        {
+          "world_xy": [
+            2.29610059419054,
+            -4.15745789630079
+          ],
+          "map_xy": [
+            -4.1575,
+            3.7039
+          ]
+        },
+        {
+          "world_xy": [
+            4.242640687119284,
+            -3.1819805153394647
+          ],
+          "map_xy": [
+            -3.182,
+            1.7574
+          ]
+        },
+        {
+          "world_xy": [
+            5.543277195067719,
+            -1.7220754456429068
+          ],
+          "map_xy": [
+            -1.7221,
+            0.4567
+          ]
+        },
+        {
+          "world_xy": [
+            6.0,
+            -1.102182119232618e-15
+          ],
+          "map_xy": [
+            -0.0,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "warehouse_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 1,
+      "areas": {
+        "spawn_connected": {
+          "samples": 6517,
+          "area_m2": 65.17,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.949977
+        },
+        "all_enclosed_safe": {
+          "samples": 6517,
+          "area_m2": 65.17,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.949977
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            0,
+            -3.4
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            4.8,
+            -3.4
+          ],
+          "map_xy": [
+            4.8,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            4.8,
+            0
+          ],
+          "map_xy": [
+            4.8,
+            3.4
+          ]
+        },
+        {
+          "world_xy": [
+            4.8,
+            3.4
+          ],
+          "map_xy": [
+            4.8,
+            6.8
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            3.4
+          ],
+          "map_xy": [
+            0.0,
+            6.8
+          ]
+        },
+        {
+          "world_xy": [
+            -4.8,
+            3.4
+          ],
+          "map_xy": [
+            -4.8,
+            6.8
+          ]
+        },
+        {
+          "world_xy": [
+            -4.8,
+            0
+          ],
+          "map_xy": [
+            -4.8,
+            3.4
+          ]
+        },
+        {
+          "world_xy": [
+            -4.8,
+            -3.4
+          ],
+          "map_xy": [
+            -4.8,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            -3.4
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            0
+          ],
+          "map_xy": [
+            0.0,
+            3.4
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            3.4
+          ],
+          "map_xy": [
+            0.0,
+            6.8
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            0
+          ],
+          "map_xy": [
+            0.0,
+            3.4
+          ]
+        },
+        {
+          "world_xy": [
+            0,
+            -3.4
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "large_oval_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 2,
+      "areas": {
+        "spawn_connected": {
+          "samples": 9923,
+          "area_m2": 99.23,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.936813
+        },
+        "all_enclosed_safe": {
+          "samples": 16478,
+          "area_m2": 164.78,
+          "observed_free_fraction": 0.602197,
+          "usable_fraction": 0.564146
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            10.0,
+            0.0
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            9.238795325112868,
+            2.2961005941905386
+          ],
+          "map_xy": [
+            2.2961,
+            0.7612
+          ]
+        },
+        {
+          "world_xy": [
+            7.0710678118654755,
+            4.242640687119285
+          ],
+          "map_xy": [
+            4.2426,
+            2.9289
+          ]
+        },
+        {
+          "world_xy": [
+            3.8268343236508984,
+            5.54327719506772
+          ],
+          "map_xy": [
+            5.5433,
+            6.1732
+          ]
+        },
+        {
+          "world_xy": [
+            6.123233995736766e-16,
+            6.0
+          ],
+          "map_xy": [
+            6.0,
+            10.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3.826834323650897,
+            5.54327719506772
+          ],
+          "map_xy": [
+            5.5433,
+            13.8268
+          ]
+        },
+        {
+          "world_xy": [
+            -7.071067811865475,
+            4.242640687119286
+          ],
+          "map_xy": [
+            4.2426,
+            17.0711
+          ]
+        },
+        {
+          "world_xy": [
+            -9.238795325112868,
+            2.2961005941905395
+          ],
+          "map_xy": [
+            2.2961,
+            19.2388
+          ]
+        },
+        {
+          "world_xy": [
+            -10.0,
+            7.347880794884119e-16
+          ],
+          "map_xy": [
+            -0.0,
+            20.0
+          ]
+        },
+        {
+          "world_xy": [
+            -9.238795325112868,
+            -2.296100594190538
+          ],
+          "map_xy": [
+            -2.2961,
+            19.2388
+          ]
+        },
+        {
+          "world_xy": [
+            -7.071067811865477,
+            -4.242640687119285
+          ],
+          "map_xy": [
+            -4.2426,
+            17.0711
+          ]
+        },
+        {
+          "world_xy": [
+            -3.8268343236509033,
+            -5.543277195067719
+          ],
+          "map_xy": [
+            -5.5433,
+            13.8268
+          ]
+        },
+        {
+          "world_xy": [
+            -1.8369701987210296e-15,
+            -6.0
+          ],
+          "map_xy": [
+            -6.0,
+            10.0
+          ]
+        },
+        {
+          "world_xy": [
+            3.8268343236509,
+            -5.54327719506772
+          ],
+          "map_xy": [
+            -5.5433,
+            6.1732
+          ]
+        },
+        {
+          "world_xy": [
+            7.071067811865474,
+            -4.242640687119286
+          ],
+          "map_xy": [
+            -4.2426,
+            2.9289
+          ]
+        },
+        {
+          "world_xy": [
+            9.238795325112864,
+            -2.296100594190542
+          ],
+          "map_xy": [
+            -2.2961,
+            0.7612
+          ]
+        },
+        {
+          "world_xy": [
+            10.0,
+            -1.4695761589768238e-15
+          ],
+          "map_xy": [
+            -0.0,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "large_warehouse_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 1,
+      "areas": {
+        "spawn_connected": {
+          "samples": 30418,
+          "area_m2": 304.18,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.959629
+        },
+        "all_enclosed_safe": {
+          "samples": 30418,
+          "area_m2": 304.18,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.959629
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            -10,
+            -7.5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            -7.5
+          ],
+          "map_xy": [
+            20.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            -2.5
+          ],
+          "map_xy": [
+            20.0,
+            5.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            -2.5
+          ],
+          "map_xy": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            2.5
+          ],
+          "map_xy": [
+            0.0,
+            10.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            2.5
+          ],
+          "map_xy": [
+            20.0,
+            10.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            7.5
+          ],
+          "map_xy": [
+            20.0,
+            15.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            7.5
+          ],
+          "map_xy": [
+            0.0,
+            15.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            -7.5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "course": "slalom_course.sdf",
+      "grid_sample_resolution_m": 0.1,
+      "robot_radius_m": 0.62,
+      "safety_margin_m": 0.28,
+      "reference_components": 1,
+      "areas": {
+        "spawn_connected": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.974292
+        },
+        "all_enclosed_safe": {
+          "samples": 23806,
+          "area_m2": 238.06,
+          "observed_free_fraction": 1.0,
+          "usable_fraction": 0.974292
+        }
+      },
+      "map_matches_world": true,
+      "saved_map_source": "slam_toolbox",
+      "inspection_stations": [
+        {
+          "world_xy": [
+            -10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "world_xy": [
+            -9,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -1.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            10,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -20.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -13.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -3,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -7.0
+          ]
+        },
+        {
+          "world_xy": [
+            -9,
+            5
+          ],
+          "map_xy": [
+            10.0,
+            -1.0
+          ]
+        },
+        {
+          "world_xy": [
+            -10,
+            -5
+          ],
+          "map_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

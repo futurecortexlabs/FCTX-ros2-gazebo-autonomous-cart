@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "ground_truth_subscribers": [
+    [
+      "loop_manual_panel",
+      "/"
+    ]
+  ],
+  "report": {
+    "completed": false,
+    "target_laps": 0,
+    "laps": -1.24999,
+    "sim_seconds": 39.3,
+    "completion_sim_seconds": null,
+    "course_world": "worlds/warehouse_course.sdf",
+    "min_body_environment_clearance_lower_bound_m": 0.8445,
+    "wall_contact_count": 0,
+    "obstacle_contact_count": 0,
+    "collision_count": 0,
+    "floor_contact_count": 79886,
+    "contact_topics_received": [
+      "front_left",
+      "front_right",
+      "rear_left",
+      "rear_right"
+    ],
+    "min_body_wall_clearance_lower_bound_m": 0.8445,
+    "min_lidar_distance_m": 1.52,
+    "max_radial_error_m": 4.5,
+    "odometry_samples": 778,
+    "valid_scan_messages": 799,
+    "safety_state": "stopped",
+    "control_mode": "auto",
+    "position": [
+      -8.718021042724428e-05,
+      1.836714672048525,
+      1.5756903611506938
+    ],
+    "autonomy": "Known-map goal navigation",
+    "mission": {
+      "state": "completed",
+      "detail": "すべての配送地点を完了しました",
+      "paused": false,
+      "index": 2,
+      "total": 2,
+      "remaining": 0.0,
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "wait": 3.0
+        },
+        {
+          "x": 0.0,
+          "y": 2.0,
+          "wait": 3.0
+        }
+      ]
+    },
+    "replan_count": 0,
+    "dynamic_obstacle_count": 0,
+    "navigation_state": "arrived",
+    "navigation_goal": [
+      0.0,
+      2.0
+    ],
+    "goal_distance_m": 0.173811203836892,
+    "navigation_detail": "目的地に到着しました（許容距離0.18m）",
+    "planner_state": "waiting_for_scan",
+    "auto_speed_limit_mps": 0.45,
+    "selected_velocity": [
+      0.0,
+      0.0
+    ],
+    "actual_velocity": [
+      0.0,
+      0.0
+    ],
+    "localization": "localization",
+    "coordinate_frame": "map"
+  }
+}

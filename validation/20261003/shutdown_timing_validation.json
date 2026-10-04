@@ -1,0 +1,442 @@
+{
+  "ros_domain_id": "76",
+  "gz_partition": "isolated_test_partition",
+  "source_files_sha256": {
+    "config/amcl.yaml": "82560302162946950554f672c4a8fe0865a8aa1c1dfb09ead594c12af7e11550",
+    "config/ekf.yaml": "dd8c70d22197a94a3c52519923cb42dc8729e656150c304713d6c1d6923c5672",
+    "config/slam.yaml": "b484cff52172f82e3b05ea2128a51009725eb81f68a9d111c6baaafc8d1ee34f",
+    "launch/lidar_lab.launch.py": "f7017178729f65966e481fdf8e2d1e9da73ffc7c4757ae2e2ae80d0052ac54c9",
+    "launch/loop_course.launch.py": "a8dbb0c34a9d5fee86a00e7b1d4dedeb2a477dbc96dab9bd502897751c2084b2",
+    "manual_control.sh": "adde9e11af5b1f9a3923a277efefb8a1691acde05685098dd8c9ace6eb911a22",
+    "maps/oval_course/map.pgm": "746d4948312d90c59b4a959bdbae4fde7ffac77384003cac74187542526b93d3",
+    "maps/oval_course/map.yaml": "39449ba91a9cd3a96220e40a772dbdf67cf76bc78fdd341dfdf5932ae7debdb4",
+    "maps/oval_course/map_metadata.json": "4990712c429046f5d838e807040dddd1664f80524aa91afcc2ee12beb042d7f4",
+    "maps/warehouse_course/map.pgm": "9aba456d9d2106c0061a09179cf5af8a6be0952cba1f72edc181713afaa7bbfb",
+    "maps/warehouse_course/map.yaml": "24af11ae0601a5baec8eb93cfe111ec75f562cc992bf3440c00c78201e961192",
+    "maps/warehouse_course/map_metadata.json": "3177d23e345f99d76b8f74804c5acf11b2d5c0a14d65b773b20d29a4fd204ffc",
+    "run_courses.sh": "67259761ac72c1349965bc5f46ab5f34a1c32d9ad0991b9a89db8c2e75ed3394",
+    "run_loop.sh": "70496a6d925b7bdf4bbc6e184745e799632eefa1716dc7c149b9346b678e9734",
+    "run_manual.sh": "a1a8b4277b5956c118a056dcda9d842c29f551c402815616b4f3be38f2f46ad1",
+    "run_obstacles.sh": "aadda71e8fc4b68290cdb1703f7e748029c8b56940bf3e9c00d0defc01ca55f9",
+    "scripts/benchmark_optimization.py": "bd723dfc96e135db5a788e45032e3e81875e528cf5d944d9566a8736a023e35e",
+    "scripts/build_extra_courses.py": "53a7a4c9193f7ebe05ee8d5f9e9c535d7c41f3f582b381ec611e0fa684c64995",
+    "scripts/build_large_courses.py": "b68c357f8eb95b49890d96975a73b86ad0b30110ddf1d53e8d410ded2feb4494",
+    "scripts/build_loop_world.py": "6599f4f4c5780951e998fe6ca839637998b4be538c900a300efcd7bbfd7fc1ee",
+    "scripts/build_obstacle_course.py": "570a54d0cd4d407529034c6eab33ff1d3209f99cec608abcfaf0b501518fa330",
+    "scripts/capture_overview.py": "19b042a04eb6fbb18810725b7a6804edd7ad4a9878f144b59643fac579364b59",
+    "scripts/check_environment.py": "374f0051aa4fba61fa4fb46d4bcf0615aec21e612cad10a0b148bf36a03dd81b",
+    "scripts/course_selector.py": "c8621f1bc2701eb35bd0df8838ae3905b6636ae98dbf45abce8ffd8ca4479d72",
+    "scripts/dynamic_obstacles.py": "a19fd4dbc95fc9204d676f064b79ff19d974cec38e3d39f405ce0b7108185cd8",
+    "scripts/generate_acceptance_report.py": "2bed273221e1e803d0d04f7d916b78ce5036deb27cbbc0fb684f2578cc0198c5",
+    "scripts/goal_navigation.py": "0e3b641ebd3b718227d175a2820a981ef01aa0d329cd1668f83ef68586d912df",
+    "scripts/goal_panel.py": "3e5c03c8636fd94824957657db822a918fec034602c0f39a89031ca21711e703",
+    "scripts/localization_bridge.py": "5cff54e9c5fc93433e7e318854949e10acd6a466e782b16df76ad315966b16b8",
+    "scripts/loop_controller.py": "302b19ea95be51af27a82ee99e869341b1c4073d1ed9ebd02b1f7ca53cf3087e",
+    "scripts/loop_core.py": "db033783fcb46fb7d1ae28157528e70e80b2365f0b6a6ed866d16f38a13f1235",
+    "scripts/manual_panel.py": "9801e14b49241ff39902159925a5d5fe0013aa2be5485719582fc6e9ede21610",
+    "scripts/map_cache.py": "83762936949d65d47537b4ad531bbc2faf5c36ec52e9f2394634509f04c86ecb",
+    "scripts/mission_control.py": "3590f49ae1699830f600b7932ede1f023f2a0ad0a6a4a81ca303bc22c252e11a",
+    "scripts/mission_panel.py": "80e9994ab70687308ccb61ca5902217be7a151e79f64487ed7bb306d6f719223",
+    "scripts/observe_localization_accuracy.py": "55fb10746ef520606478e84707a19742c9118bb0157680a7943e60b8bc389b47",
+    "scripts/obstacle_avoidance.py": "9fe91cb44676bd7c1e88fa14641a2d3f70b1b62f090b6b9e5e0e73cbf32b453a",
+    "scripts/obstacle_control.py": "d32102150f590ed0e7db0649e0f9fd1e9362d5c72608eacd954a56f72d4856f7",
+    "scripts/occupancy_navigation.py": "4f5f973b80cd942d2008d6b00c7c0039ccd113b3f832de98d881d4363465ed83",
+    "scripts/resume_large_validation.py": "63dea0287b7aa31a24ff1f1d07b00095746ab4ef5a71deaa9b8a39f7eca3f50d",
+    "scripts/run_acceptance.py": "5a713ac8c4643177d7c051f4becdd4499234e532a5f841a6f7deba81a36685c7",
+    "scripts/run_audit.py": "c15159aced6c796d85df4c661fab5f40151ebe282a2d7c73db3cf0a2de68bf5f",
+    "scripts/save_slam_map.py": "baa4dfebfac2565181cedd2d1f826865ea981219bc4ba2e858fc69944e7e7098",
+    "scripts/speed_control.py": "ddbd9c64732ff763e43efbaae585442b7f54c96c1b584eb73ac0f873c479ad36",
+    "scripts/speed_settings.py": "70c8e7833402cfd893bf465a4dd35742aef75714ab7e3562bd9eb889f9502d72",
+    "scripts/test_course_switch.py": "82c621ddacdaa00fa3ffd106493df2bf8dd8b634373896e9f9ba9b4e9bf98627",
+    "scripts/test_dynamic_obstacles.py": "9b3a6f9df9a3c13d4c56ac6a5331f0aab5a8f3c25adcd94ad36fdde9efa7ffb6",
+    "scripts/test_goal_controller.py": "4aadd68bde5cde83bfab8deb06681f8ab4e1670f687b86849f218749844d4694",
+    "scripts/test_goal_course_switch.py": "be807c7e66e9c8b36a8f9a27be5705cdb4a1e0d49026c40004c9a112055c696c",
+    "scripts/test_goal_navigation.py": "7c645094db200fcb937705ffa252bd96e664c2344b5efdc91435a29f631b619d",
+    "scripts/test_goal_panel.py": "a67f91535a66818f8c63e147ae7746955c209c9fe067fd78bf041e5d4cbedd5f",
+    "scripts/test_localization_bridge.py": "9aef05eff3d77a35c97ea4a13e5b886e63d5f73a3e0985f160e95d8d320cb6a0",
+    "scripts/test_loop_core.py": "6ff3546f93f49f334646dd5d657182b5fc807b9b62d8c82553a91dc8a7ea659d",
+    "scripts/test_manual_drive.py": "15ca429335ac21bc8fb2f3711aa4a6eedd5695d54de63b25986e867a1eadae05",
+    "scripts/test_manual_mode.py": "0e236a3876323c202991913a10a5cd1069b744e78d502108cf716b217e3f1cf4",
+    "scripts/test_manual_panel.py": "d59af34786d7e64dbef3f738c56b0e682565ba9c3b507c9a87c63705db71bdd4",
+    "scripts/test_mission_control.py": "53e3ff79fef6fe21c4728aa63af97cb366d49158062046c7f8c9988a85dd444c",
+    "scripts/test_obstacle_avoidance.py": "dae61bb755b1a2fea90ac319f6550bfc63d14c5a421b7e5b2b345f0d0c474c2f",
+    "scripts/test_obstacle_contacts.py": "a0b5ac568cb3a18d5170d70317f5a850992e7cf8a9ee63a5c50d5c37f6a392d5",
+    "scripts/test_occupancy_navigation.py": "ed4089347280e3c1d7c7c765f6367c8c9e45a3ff26476df5dcb8047d689b7de6",
+    "scripts/test_optimization.py": "8436e4e6963867cafb6f54e31208f2453dc5c616c1208e05207b9074f190a9e1",
+    "scripts/test_safety_gate.py": "364762f4e4ce475300d971aab368933cda8dd5abfb9ef786dea4fbbdf9212ed7",
+    "scripts/test_startup_supervision.py": "79573523abca5edfe2b25e99072c15f93f934af72a5db38445ad9b60da25b901",
+    "scripts/test_validation_processes.py": "46cd7b355fd9e3fc7d81397a6e21bcc80d8ee6017f3cfadf268c79e19e821ddf",
+    "scripts/validate_all_localization.py": "49c2dec7db93a83cb0d19b803ed7c28149315112f30dab38f860839ec399c7e0",
+    "scripts/validate_avoidance.py": "1eeadbc192d2accc3cc80661b2d7ac4e68d08ba74cb5eedd62d0b3e42dd35c63",
+    "scripts/validate_dynamic_route.py": "2013c51fd31ada87dda91f1917e3a968a848984263d5def37f4bb6bcd17d28ee",
+    "scripts/validate_dynamic_static_course.py": "2d891b0f15632ba5edf8d4bca080f72c85c4279ae7ecaacef7e3ef5733c89315",
+    "scripts/validate_endurance.py": "aeec48ce310b96cbf419ab0fc37bca8836c119c467988bea393967a118a55df7",
+    "scripts/validate_gazebo_shutdown.py": "0f94e675f8e8e8f7b85538c2c9288a3b719fad51d46deef2d52595c2a1d6d784",
+    "scripts/validate_goal_navigation.py": "a3db2c4ebc7e809aabbf03610e7bfb024aec84befa376ecc053ae67359e2feb5",
+    "scripts/validate_large_courses.py": "3860870a3aa1461edc66ab98546385d2222dfa41def4b9c4d9b53a5d92dd6300",
+    "scripts/validate_localized_ui.py": "380851986bb4ec4abf9f4cbc125ca425e311372e3307d4bb2496f18e1250ade0",
+    "scripts/validate_map_coverage.py": "70e3cf1ec10a2f092885d05958fbd48b75d0222d46f00975662b785d039f8ce5",
+    "scripts/validate_mission.py": "f3005ebd43f2f07822196969ed16cb42821ac4edfe18fa8aacb39bbce0a94ce1",
+    "scripts/validate_obstacle_course.py": "febce475752c0bb2a2714beef9dcf5e71a193c5fe3059e286aba783316cd3644",
+    "scripts/validate_optimization.py": "3b1cb6d6847b8779768403921458e1982ed99ea73aad6757199162a766e375b5",
+    "scripts/validate_release.py": "ff7ebb28c0197b63a0c59c830fc86e79f46fe09009a54f01bcf20657047f778b",
+    "scripts/validate_saved_routes.py": "25abaf9f7de3dd5398d9635e97c46c810baf6bffbe66bf783ff0908e0b07ad6e",
+    "scripts/validate_shutdown_timing.py": "3694d4014fd620856ea04281d07998eb83153e17b14bc3dca239a7df609f89b9",
+    "scripts/validate_slam_stage.py": "ceaefe49c6c4102da837a275e605d364af98d14cac97f103100653ff30f3e08a",
+    "scripts/validate_startup_recovery.py": "7e8fc0da93d5bcc1503dd72963d0d5dbb236fe4f57fb9f19a1df7c3ad9b4c474",
+    "scripts/validation_processes.py": "91ce0478a61bba2cca0b82cb0ab050dd0e3a254497cd143b3df035dd82ea3730",
+    "scripts/world_clearance.py": "82e0b6aa8ef7eb0ac5ef8db0efe97ad9e25c2cbec18511b82ee300e786d44ebc",
+    "worlds/oval_course.sdf": "6b9afb1261c352d28ef6ff34049e088c985e9d24658e841ec58a05dc4351469b",
+    "worlds/warehouse_course.sdf": "44d4f63c7a0bf058ecf4983a0f9da37f5e3af53d53ba5bb619c6977686c90e9c"
+  },
+  "all_passed": true,
+  "completed": true,
+  "expected_cases": 9,
+  "cases": [
+    {
+      "number": 1,
+      "scenario": "starting_cancel",
+      "delay_seconds": 0.0,
+      "gui": false,
+      "source": "simulation",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 0.2058069569975487,
+      "shutdown_seconds": 0.0759820800012676,
+      "launch_exit_code": -2,
+      "events": [
+        {
+          "event": "SIGINT",
+          "seconds": 0.00023256600252352655
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": -2,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 2,
+      "scenario": "starting_cancel",
+      "delay_seconds": 0.2,
+      "gui": false,
+      "source": "simulation",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 0.3156697869999334,
+      "shutdown_seconds": 0.09113491499738302,
+      "launch_exit_code": -2,
+      "events": [
+        {
+          "event": "SIGINT",
+          "seconds": 8.896999497665092e-05
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": -2,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 3,
+      "scenario": "starting_cancel",
+      "delay_seconds": 2.0,
+      "gui": false,
+      "source": "simulation",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 2.6644285729998956,
+      "shutdown_seconds": 0.6451454120033304,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "SIGINT",
+          "seconds": 0.0005041399999754503
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 4,
+      "scenario": "ready_immediate",
+      "delay_seconds": 0.0,
+      "gui": false,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 5.884000352998555,
+      "shutdown_seconds": 0.9059130050009117,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.0021461180003825575
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.3035563110024668
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.30405475400038995
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.49917606500093825
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.4992075019981712
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 5,
+      "scenario": "ready_immediate",
+      "delay_seconds": 0.0,
+      "gui": false,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 5.687054802998318,
+      "shutdown_seconds": 0.9075326450038119,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.0005482740016304888
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.3030366140010301
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.30360880499938503
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.4985219730006065
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.49855309999838937
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 6,
+      "scenario": "ready_immediate",
+      "delay_seconds": 0.0,
+      "gui": false,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 5.593887759001518,
+      "shutdown_seconds": 0.905033597999136,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.0005096239983686246
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.30288959400058957
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.303499154993915
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.4968345929955831
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.4968638339996687
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 7,
+      "scenario": "ready_wait_three",
+      "delay_seconds": 3.0,
+      "gui": false,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 8.97563308700046,
+      "shutdown_seconds": 0.9921200109965866,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.0013881830018362962
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.3027408630005084
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.3033180650018039
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.4976334349994431
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.49766373499733163
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 8,
+      "scenario": "pending_switch",
+      "delay_seconds": 0.0,
+      "gui": false,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 11.906242662997101,
+      "shutdown_seconds": 7.3088751529940055,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.000629071997536812
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.30378115300118225
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.3045414539956255
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.5006882749949
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.5007587119980599
+        },
+        {
+          "event": "pause_requested",
+          "seconds": 6.3029246689984575
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 6.599931388998812
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 6.600420009999652
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 6.792610657001205
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 6.792642239997804
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        },
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    },
+    {
+      "number": 9,
+      "scenario": "ready_immediate_gui",
+      "delay_seconds": 0.0,
+      "gui": true,
+      "source": "localization",
+      "passed": true,
+      "cleanup_completed": true,
+      "elapsed_seconds": 5.285419933003141,
+      "shutdown_seconds": 1.0129736070011859,
+      "launch_exit_code": 0,
+      "events": [
+        {
+          "event": "pause_requested",
+          "seconds": 0.0005708870012313128
+        },
+        {
+          "event": "pause_acknowledged",
+          "seconds": 0.3002036469988525
+        },
+        {
+          "event": "stats_requested",
+          "seconds": 0.30054786799883004
+        },
+        {
+          "event": "pause_applied",
+          "seconds": 0.5102208289972623
+        },
+        {
+          "event": "SIGINT",
+          "seconds": 0.5102449629994226
+        }
+      ],
+      "owned_launches": [
+        {
+          "exit_code": 0,
+          "remaining": []
+        }
+      ],
+      "native_processes_remaining": []
+    }
+  ]
+}
