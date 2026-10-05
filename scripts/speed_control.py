@@ -1,11 +1,11 @@
 # ファイルの役割: 速度スライダーと数値入力を同期するQt部品。入力の変更通知が循環しないようにする。
 """Slider and numeric entry that stay in sync without feedback loops."""
-from PyQt5 import QtCore, QtWidgets
+from PySide2 import QtCore, QtWidgets
 
 
 # スライダーと数値欄を一組として扱う速度入力部品。
 class SpeedControl(QtWidgets.QWidget):
-    valueChanged = QtCore.pyqtSignal(float)
+    valueChanged = QtCore.Signal(float)
 
     # このクラスで使う状態・通信先・画面部品を初期化する。
     def __init__(self, title, maximum, value, unit='m/s'):

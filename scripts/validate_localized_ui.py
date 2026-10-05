@@ -4,7 +4,7 @@ os.environ['QT_QPA_PLATFORM']='offscreen';os.environ.setdefault('ROS_DOMAIN_ID',
 import time,json,signal
 from pathlib import Path
 import rclpy
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from course_selector import CoursePanel,PanelNode,COURSES,ROOT,configure_japanese_font
 app=QtWidgets.QApplication([]);configure_japanese_font(app);rclpy.init();node=PanelNode();panel=CoursePanel(node,simulation_gui=False);panel.show();paused_pid=None
 

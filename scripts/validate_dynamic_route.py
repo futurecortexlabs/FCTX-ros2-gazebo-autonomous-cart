@@ -4,7 +4,7 @@ os.environ['QT_QPA_PLATFORM']='offscreen';os.environ.setdefault('ROS_DOMAIN_ID',
 import json,time,math,sys
 mission_test='--mission' in sys.argv
 import rclpy
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from course_selector import CoursePanel,PanelNode,COURSES,ROOT,configure_japanese_font
 from obstacle_control import add,remove_all
 app=QtWidgets.QApplication([]);configure_japanese_font(app);rclpy.init()

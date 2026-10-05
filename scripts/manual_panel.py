@@ -22,7 +22,7 @@ from sensor_msgs.msg import LaserScan
 from std_msgs.msg import String
 from std_srvs.srv import SetBool
 from rclpy.qos import qos_profile_sensor_data
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 from speed_control import SpeedControl
 from goal_panel import GoalPanel
 from speed_settings import MAX_FORWARD_SPEED, MAX_REVERSE_SPEED, MAX_TURN_SPEED, MAX_AUTO_SPEED, PRESETS

@@ -6,7 +6,7 @@ import json
 import math
 import time
 import rclpy
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from course_selector import CoursePanel, PanelNode, COURSES, ROOT, configure_japanese_font
 
 app = QtWidgets.QApplication([])

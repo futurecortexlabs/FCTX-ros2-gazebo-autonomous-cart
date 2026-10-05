@@ -8,7 +8,7 @@ import time
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
-from PyQt5 import QtCore, QtGui, QtWidgets, QtTest
+from PySide2 import QtCore, QtGui, QtWidgets, QtTest
 from manual_panel import ManualPanel, configure_japanese_font
 
 ROOT = Path(__file__).resolve().parents[1]

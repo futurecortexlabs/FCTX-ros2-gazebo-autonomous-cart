@@ -6,7 +6,7 @@ import json
 import time
 from pathlib import Path
 import rclpy
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from manual_panel import PanelNode,configure_japanese_font
 from course_selector import CoursePanel
 

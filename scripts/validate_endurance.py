@@ -17,7 +17,7 @@ os.environ.setdefault('GZ_PARTITION', 'ros2_gazebo_loop')
 import rclpy
 from nav_msgs.msg import Odometry
 from rclpy.qos import qos_profile_sensor_data
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from course_selector import CoursePanel, PanelNode, COURSES, ROOT, configure_japanese_font
 from mission_control import validate_route
 from validate_saved_routes import source_manifest, FORBIDDEN_TRUTH_SUBSCRIBERS

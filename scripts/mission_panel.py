@@ -1,7 +1,7 @@
 """配送ルート編集・保存・読込と、応答ID付きの実行操作を行う。"""
 import json,time,uuid
 from pathlib import Path
-from PyQt5 import QtCore,QtWidgets
+from PySide2 import QtCore,QtWidgets
 from std_msgs.msg import String
 from mission_control import validate_route
 

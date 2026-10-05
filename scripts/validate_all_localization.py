@@ -4,7 +4,7 @@ os.environ['QT_QPA_PLATFORM']='offscreen';os.environ.setdefault('ROS_DOMAIN_ID',
 import time,json,math,sys
 from pathlib import Path
 import rclpy
-from PyQt5 import QtWidgets
+from PySide2 import QtWidgets
 from course_selector import CoursePanel,PanelNode,COURSES,ROOT,configure_japanese_font
 from save_slam_map import save
 from nav_msgs.msg import Odometry

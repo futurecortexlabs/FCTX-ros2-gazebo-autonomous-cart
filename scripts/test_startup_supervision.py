@@ -441,7 +441,7 @@ class ShutdownInputGuiTests(unittest.TestCase):
     """実Qtイベントで、停止中の新しい運転・自動・解除・地図操作を遮断する。"""
 
     def setUp(self):
-        from PyQt5 import QtWidgets
+        from PySide2 import QtWidgets
         from test_manual_panel import FakeNode, app
         self.app = app
         self.node = FakeNode()
@@ -470,7 +470,7 @@ class ShutdownInputGuiTests(unittest.TestCase):
         self.panel.tick()
 
     def tearDown(self):
-        from PyQt5 import QtCore
+        from PySide2 import QtCore
         self.panel.process = None
         self.panel.shutdown_request = None
         self.panel.close()
@@ -479,7 +479,7 @@ class ShutdownInputGuiTests(unittest.TestCase):
         self.spin.stop()
 
     def test_new_clicks_and_key_focus_cannot_restart_during_slam_wait(self):
-        from PyQt5 import QtCore, QtWidgets, QtTest
+        from PySide2 import QtCore, QtWidgets, QtTest
         p = self.panel
         QtTest.QTest.keyPress(p, QtCore.Qt.Key_W)
         p.tick()
@@ -512,13 +512,15 @@ class ShutdownInputGuiTests(unittest.TestCase):
         p.navigation.pub.publish.assert_not_called()
 
     def test_disabled_panel_timers_still_receive_and_monitor_shutdown(self):
-        from PyQt5 import QtTest
+        from PySide2 import QtCore
         p = self.panel
         p.timer.start(5)
         p.manager.start(5)
         p.stop_process()
         before = self.spin_mock.call_count
-        QtTest.QTest.qWait(35)
+        wait_loop = QtCore.QEventLoop()
+        QtCore.QTimer.singleShot(35, wait_loop.quit)
+        wait_loop.exec_()
         self.assertTrue(p.timer.isActive() and p.manager.isActive())
         self.assertGreater(self.spin_mock.call_count, before)
         self.assertIsNotNone(p.shutdown_startup_wait_since)
@@ -526,7 +528,7 @@ class ShutdownInputGuiTests(unittest.TestCase):
         self.assertTrue(all(command == (0., 0.) for command in self.node.sent))
 
     def test_normal_startup_keeps_controls_and_navigation_enabled(self):
-        from PyQt5 import QtCore, QtTest
+        from PySide2 import QtCore, QtTest
         self.assertTrue(self.panel.isEnabled())
         QtTest.QTest.mousePress(self.panel.directions['forward'], QtCore.Qt.LeftButton)
         self.panel.tick()

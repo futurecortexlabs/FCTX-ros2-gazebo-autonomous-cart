@@ -18,7 +18,7 @@ os.environ.setdefault('GZ_PARTITION', 'ros2_gazebo_loop')
 
 import rclpy
 from rclpy.signals import SignalHandlerOptions
-from PyQt5 import QtCore, QtWidgets
+from PySide2 import QtCore, QtWidgets
 from course_selector import CoursePanel, PanelNode, COURSES, ROOT, configure_japanese_font
 
 

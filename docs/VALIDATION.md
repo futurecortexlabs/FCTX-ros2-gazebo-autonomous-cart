@@ -2,6 +2,16 @@
 
 実走行は2026-10-03に Windows + WSL2 / Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic で検証しました。2026-10-04には個人情報の匿名化後の版で、単体試験と初回診断を再確認しました。試験ごとにROS domainとGazebo partitionを分け、所有するプロセスだけを起動・終了しています。[結果JSONの案内](../validation/20261003/README.md)
 
+## 2026-10-05のMIT・GUI移行確認
+
+現在のGUIはPySide2 5.15.13／Qt 5.15.13です。18入口の単体試験、実行器6条件、ログやローカルフォントを含まない別コピーでの初回診断・全7地図の整合性が成功しました。追加のQt2件では、奇数幅の地図画像の上下方向・一時バッファ破棄後の画素保持と、実QProcessの出力読込・終了通知・破棄・再実行を確認しています。[単体・初回診断の記録](../validation/20261005/mit_release_validation.json)
+
+隔離したROS domain／Gazebo partitionと試験コピーで、倉庫AMCLの地図表示、AMCL停止注入時の安全停止と復帰、ルート保存・読込、2地点配送、接触0、完了後の実停止を確認しました。終了時はGazebo一時停止、所有launchの終了コード0、SIGINTのみ、所有プロセス残存0でした。[GUI統合・正常終了の記録](../validation/20261005/mit_gui_integration.json)
+
+今回のGUI統合を再実行する場合は別コピーで `python3 scripts/check_environment.py` を実行してログ出力先を準備してから、`python3 scripts/validate_localized_ui.py` を実行します。この検証は試験コピー内の `routes/warehouse_slam_delivery.json` を書き換えるため、通常の作業フォルダでは実行しないでください。
+
+以下の2026-10-03・10-04のGUIを含む結果はPyQt5を使用した当時の記録です。PySide2への移行はGUI依存と試験処理の変更で、走行制御・配布地図・SLAM設定は維持しました。全7コースのSLAM/AMCL巡回・30分連続配送・表示ウィンドウ付き描画は今回再実行していません。過去のソースSHAと今回の記録を区別して扱ってください。
+
 ## 配布地図とAMCL配送
 
 付属する観測地図と全巡回ルートを使い、全7コースでAMCLを再起動しました。計98地点への配送、接触0、配送完了後の実停止を確認しました。

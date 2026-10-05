@@ -3,7 +3,7 @@ import json
 import math
 import time
 from pathlib import Path
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 from geometry_msgs.msg import PoseStamped
 from nav_msgs.msg import OccupancyGrid
 from rclpy.qos import QoSProfile, DurabilityPolicy
@@ -16,7 +16,7 @@ from map_cache import occupancy_signature
 
 
 class GoalMap(QtWidgets.QWidget):
-    selected = QtCore.pyqtSignal(float, float)
+    selected = QtCore.Signal(float, float)
 
     def __init__(self):
         super().__init__()

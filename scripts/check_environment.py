@@ -7,7 +7,10 @@ result={'packages':{},'python':{},'maps':{},'display_configured':bool(os.environ
 for package in packages:
  p=subprocess.run(['dpkg-query','-W','-f=${Version}',package],text=True,capture_output=True)
  result['packages'][package]=p.stdout if p.returncode==0 else None
-for name in ['rclpy','numpy','scipy','yaml','PIL','PyQt5','psutil']:result['python'][name]=importlib.util.find_spec(name) is not None
+for name in ['rclpy','numpy','scipy','yaml','PIL','PySide2','psutil']:result['python'][name]=importlib.util.find_spec(name) is not None
+for name in ['PySide2.QtCore','PySide2.QtGui','PySide2.QtWidgets']:
+ try:importlib.import_module(name);result['python'][name]=True
+ except (ImportError,OSError):result['python'][name]=False
 for world in sorted((ROOT/'worlds').glob('*course.sdf')):
  folder=ROOT/'maps'/world.stem
  try:

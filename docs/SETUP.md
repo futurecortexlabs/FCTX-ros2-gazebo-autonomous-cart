@@ -2,7 +2,7 @@
 
 ## 動作確認した環境
 
-Windows上のWSL2、Ubuntu 24.04、ROS 2 Jazzy、Gazebo Harmonic、Python 3.12、PyQt5で検証しています。描画にはWSLgとD3D12を使用しました。通常のUbuntuデスクトップでも環境に応じた描画設定を使えますが、保存済みの受入試験はWSL環境の結果です。
+Windows上のWSL2、Ubuntu 24.04、ROS 2 Jazzy、Gazebo Harmonic、Python 3.12で検証しています。現在のGUIはQt5対応のPySide2を使用します。描画にはWSLgとD3D12を使用しました。通常のUbuntuデスクトップでも環境に応じた描画設定を使えますが、保存済みの受入試験はWSL環境の結果です。
 
 このリポジトリはPythonスクリプトとROS launchを直接実行します。`colcon build`は必要ありません。
 
@@ -17,13 +17,16 @@ sudo apt install \
   ros-jazzy-slam-toolbox ros-jazzy-nav2-amcl \
   ros-jazzy-nav2-map-server ros-jazzy-nav2-lifecycle-manager \
   ros-jazzy-robot-localization \
-  python3-numpy python3-scipy python3-yaml python3-pil python3-pyqt5 python3-psutil \
+  python3-numpy python3-scipy python3-yaml python3-pil python3-psutil \
+  python3-pyside2.qtcore python3-pyside2.qtgui python3-pyside2.qtwidgets python3-pyside2.qttest \
   fonts-noto-cjk
 ```
 
 `ros-jazzy-ros-gz`はROS 2とGazeboの連携用パッケージです。JazzyとHarmonicの組合せ、ROSリポジトリからの導入については [Gazebo公式のインストール案内](https://gazebosim.org/docs/harmonic/ros_installation/) を参照してください。
 
 Pythonは `/usr/bin/python3` を使用します。ROSのaptパッケージと同じPython環境に揃えます。
+
+PySide2はUbuntuのapt版を使用します。QtCore・QtGui・QtWidgetsは画面の実行用、QtTestは操作の回帰試験用です。MITは本リポジトリの独自部分に適用し、PySide2／Qt5などの外部依存は各ライセンスに従います。[第三者ソフトの説明](../THIRD_PARTY_NOTICES.md) を参照してください。
 
 ## クローンと診断
 

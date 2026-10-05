@@ -301,7 +301,7 @@ def explore(selected, args):
     import rclpy
     from nav_msgs.msg import Odometry
     from rclpy.qos import qos_profile_sensor_data
-    from PyQt5 import QtWidgets
+    from PySide2 import QtWidgets
     from course_selector import CoursePanel, PanelNode, COURSES as UI_COURSES, configure_japanese_font
     from occupancy_navigation import OccupancyNavigationMap
     from save_slam_map import save

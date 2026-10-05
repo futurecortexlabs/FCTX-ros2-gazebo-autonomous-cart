@@ -8,7 +8,7 @@ from std_msgs.msg import String
 import time
 from pathlib import Path
 import rclpy
-from PyQt5 import QtCore,QtWidgets,QtTest
+from PySide2 import QtCore,QtWidgets,QtTest
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 from loop_controller import AutonomousDriver,SafetyGate

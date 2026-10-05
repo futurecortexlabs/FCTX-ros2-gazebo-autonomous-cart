@@ -26,7 +26,7 @@ UNIT_SCRIPTS = (
     "test_optimization.py", "test_loop_core.py", "test_obstacle_avoidance.py",
     "test_goal_navigation.py", "test_dynamic_obstacles.py", "test_occupancy_navigation.py",
     "test_localization_bridge.py", "test_mission_control.py", "test_goal_controller.py",
-    "test_manual_panel.py", "test_goal_panel.py", "test_safety_gate.py", "test_manual_mode.py",
+    "test_manual_panel.py", "test_goal_panel.py", "test_qt_binding.py", "test_safety_gate.py", "test_manual_mode.py",
     "test_startup_supervision.py", "test_validation_processes.py",
     "tests/test_shutdown_timing.py",
     "tests/test_map_coverage.py",

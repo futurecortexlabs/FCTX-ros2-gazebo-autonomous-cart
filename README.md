@@ -72,7 +72,7 @@ See the [architecture guide](docs/ARCHITECTURE.md) for message flow, algorithms,
 
 ## Validation
 
-The **2026-10-03 finishing validation** used maps and delivery routes covering the full circuits and main passages.
+The **2026-10-03 finishing validation** used maps and delivery routes covering the full circuits and main passages. Those GUI results used PyQt5. After switching to PySide2 on 2026-10-05, 18 unit-test entry points, six runner cases, fresh-copy diagnostics, and a short warehouse AMCL GUI test with safety stop, delivery, and clean shutdown passed. The full tours and endurance were not rerun for this migration. See the [migration records](validation/20261005/README.md).
 
 | Test | Result |
 |---|---|
@@ -119,3 +119,9 @@ The GUI and the detailed guides below are currently in Japanese.
 | SLAM and localization | [SLAM_LOCALIZATION.md](SLAM_LOCALIZATION.md) |
 | Test conditions, results, and reproduction | [Validation and scope](docs/VALIDATION.md) / [ACCEPTANCE.md](ACCEPTANCE.md) |
 | Optimization and measurement conditions | [OPTIMIZATION.md](OPTIMIZATION.md) |
+
+## License
+
+The original code, documentation, configuration, and generated course/map/route assets in this repository are licensed under the [MIT License](LICENSE). Copyright (c) 2026 FutureCortexLabs (FCTX).
+
+External dependencies retain their own licenses. The GUI uses PySide2 with Qt5, installed separately from Ubuntu packages; their LGPL conditions still apply. See [third-party licenses and redistribution](THIRD_PARTY_NOTICES.md). Windows font files are not distributed.

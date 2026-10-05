@@ -15,7 +15,7 @@ from geometry_msgs.msg import PoseWithCovarianceStamped
 from std_msgs.msg import String
 import rclpy
 from rclpy.signals import SignalHandlerOptions
-from PyQt5 import QtCore, QtWidgets
+from PySide2 import QtCore, QtWidgets
 from manual_panel import ManualPanel, PanelNode, configure_japanese_font
 
 ROOT = Path(__file__).resolve().parents[1]

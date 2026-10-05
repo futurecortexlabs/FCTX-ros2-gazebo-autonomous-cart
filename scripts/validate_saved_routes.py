@@ -103,7 +103,7 @@ def main():
     import rclpy
     from rclpy.qos import qos_profile_sensor_data
     from nav_msgs.msg import Odometry
-    from PyQt5 import QtWidgets
+    from PySide2 import QtWidgets
     from course_selector import CoursePanel, PanelNode, COURSES, configure_japanese_font
     from mission_control import validate_route
 

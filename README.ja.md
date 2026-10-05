@@ -72,7 +72,7 @@ SLAM/AMCLモードの制御・安全ゲート・位置推定は正解位置を�
 
 ## 検証実績
 
-**2026-10-03の仕上げ検証**では、全周・主要通路の地図と配送ルートを使いました。
+**2026-10-03の仕上げ検証**では、全周・主要通路の地図と配送ルートを使いました。当時のGUIはPyQt5です。2026-10-05のPySide2移行後は、単体試験18入口・実行器6条件・初回診断と、倉庫AMCLの短距離GUI統合で安全停止・配送・正常終了を再確認しました。全巡回と連続配送は今回再実行していません。[移行後の検証記録](validation/20261005/README.md)を参照してください。
 
 | 試験 | 結果 |
 |---|---|
@@ -117,3 +117,9 @@ tests/        最適化前実装などの検証用参照データ
 | SLAMと自己位置推定 | [SLAM_LOCALIZATION.md](SLAM_LOCALIZATION.md) |
 | 試験条件・結果・再検証 | [検証と適用範囲](docs/VALIDATION.md) / [ACCEPTANCE.md](ACCEPTANCE.md) |
 | 最適化と計測条件 | [OPTIMIZATION.md](OPTIMIZATION.md) |
+
+## ライセンス
+
+このリポジトリの独自コード・文書・設定・生成したコース／地図／ルートは [MIT License](LICENSE) で公開します。著作権表記は Copyright (c) 2026 FutureCortexLabs (FCTX) です。
+
+外部依存ソフトにはそれぞれのライセンスが適用されます。GUIはUbuntuパッケージから別途導入するPySide2／Qt5を使用し、これらのLGPLの条件は引き続き適用されます。[第三者ソフトのライセンスと再配布条件](THIRD_PARTY_NOTICES.md) を参照してください。Windowsフォント本体は配布しません。
